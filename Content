@@ -42,4 +42,8 @@ WORLD WIDE WEB (WWW)
         to secure data
         
   HTTP Request Message
-   
+   Request Line -  begins with a method token, followed by the Request-URI and the protocol version, and ending with CRLF. The elements    are separated by SP characters. No CR or LF is allowed except in the final CRLF (Carriage Return, Line Field) sequence.
+   example:
+        Request-Line = Method SP Request-URI SP HTTP-Version CRLF 
+        
+   Method -  indicates the method to be performed on the resource identified by the Request-URI and it is case-sensitive.
