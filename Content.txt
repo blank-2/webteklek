@@ -10,10 +10,11 @@ WORLD WIDE WEB (WWW)
 
   In October of 1990, Sir Tim Berners-Lee invented the 3 corner stone fundamental technologies that remain the foundation of today’s web
   - HTML: HyperText Markup Language. The markup (formatting) language for the web.
-  - URI: Uniform Resource Identifier. A kind of “address” that is unique and used to identify to each resource on the web. It is also commonly called a URL.
+  - URI: Uniform Resource Identifier. A kind of “address” that is unique and used to identify to each resource on the web. It is also            commonly called a URL.
   - HTTP: Hypertext Transfer Protocol. Allows for the retrieval of linked resources from across the web.
   
-  
+                           ----------------------------------------------------------
+
   HYPERTEXT TRANSFER PROTOCOL (HTTP)
     - The hypertext transfer protocol (http) is used to access resources like hypertext, hypermedia on the world wide web.
     - Jointly developed by the W3C and the IETF (Internet Engineering Task force).
@@ -107,3 +108,30 @@ WORLD WIDE WEB (WWW)
                 - allows clients to perform remote Web content authoring operations.
                 - RFC 4918
                 - some request methods: mkcol, copy, move, lock, unlock, propfind and proppatch.
+                
+                ------------------------------------------------------------
+                
+     HYPERTEXT MARKUP LANGUAGE (HTML)
+       - language used to mark up documents in the world wide web
+       - defines the structure and layout of a Web document by using a variety of tags and attributes.
+       - application of SGML (Standard General mark up language (ISO 8879))
+       - initially developed at CERN, then the IETF, then the W3C, and then also the 
+         WHATWG (Web hypertext application technology working group)
+         
+     Version History:
+        Pre-standardization
+             - HTML tags by Sir Tim Berners-Lee, late 1991
+             - HTML draft by Tim Berners-Lee and Dan Cannolly published by the IETF in mid 1993
+        Standards
+             - HTML 2.0 (RFC 18866, nov 1995)         // maganda yata dito i link nlng natin yung pag pipindutin sa site nila ganern or
+             - HTML 3.2 (W3C Recommendation, Jan 1997)          kailagan pa tyon din gagawa non?
+             - HTML 4.0 (W3C Recommendation, Dec 1997)
+             - HTML 4.01 (W3C Recommendation,Dec 1999)
+               
+Bibliography:
+History of the Web. (n.d.). Retrieved February 23, 2018, from https://www.webfoundation.org/about/vision/history-of-the-web/
+Sir Tim Berners-Lee. (n.d.). Retrieved February 23, 2018, from https://webfoundation.org/about/sir-tim-berners-lee/
+(n.d.). Retrieved February 24, 2018, from https://www.w3.org/Protocols/rfc2616/rfc2616.html
+Mitchell, B. (n.d.). What Does HTTP Mean? Retrieved February 24, 2018, from https://www.lifewire.com/hypertext-transfer-protocol-817944
+Identifying resources on the Web. (n.d.). Retrieved February 24, 2018, from https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Identifying_resources_on_the_Web
+Shannon, R. (n.d.). HTML Source : HTML Tutorials. Retrieved February 24, 2018, from http://www.yourhtmlsource.com/starthere/historyofhtml.html        
