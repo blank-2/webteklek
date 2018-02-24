@@ -1,12 +1,142 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="UTF-8">
-<title>Web Systems and Technologies Lessons</title>
-</head>
+	
+	<header>
+		<meta charset="UTF-8">
+		<title>Web Systems and Technologies Lessons</title>
+	</header>
 
 <body>
-
+	<div id="www">
+		<h1>WORLD WIDE WEB (WWW)</h1>
+		<section id="p1">
+			<p>The world wide web (www) is the most important establishment because it is the collection of web resources, either static resources
+  or dynamic resources that we can access via the internet.</p>
+		</section>
+		<section id="p2">
+			<p>The world wide web (www) was established around 1990's and it is approximately 30 years old from now. It uses a client server architecture which means each computer or process on the network is either a client or a server.</p>
+		</section>
+	</div>
+	<div>
+		<h1>Who Invented the World Wide Web?</h1>
+		<section id="p3">
+			<p>The world wide web is invented by Sir Tim Berners-Lee, a British computer scientist that was born in London. He invented the web in
+1989 while working at CERN (Conseil Européen pour la Recherche Nucléaire) a world-class fundamental physics research organization in Europe. Sir Tim Berners-Lee is also the director of the world wide web consortium, founded in 1994. The world wide web consortium is a global web standards organization to lead the web to it's full potential.</p>
+		</section>
+		<section id="p4">
+			<p>In October of 1990, Sir Tim Berners-Lee invented the 3 corner stone fundamental technologies that remain the foundation of today’s web</p>
+			<p>  - HTML: HyperText Markup Language. The markup (formatting) language for the web.</p>
+			<p>  - URI: Uniform Resource Identifier. A kind of “address” that is unique and used to identify to each resource on the web. It is also commonly called a URL.</p>
+			<p>  - HTTP: Hypertext Transfer Protocol. Allows for the retrieval of linked resources from across the web.</p> 
+		</section>
+	</div>
+	<div>
+		<h1>HYPERTEXT TRANSFER PROTOCOL (HTTP)</h1>
+		<section>
+			<p>The hypertext transfer protocol (http) is used to access resources like hypertext, hypermedia on the world wide web.</p>
+			<p>Jointly developed by the W3C and the IETF (Internet Engineering Task force).</p>
+		</section>
+			<h3>Version History:</h3>
+		<section>
+			<ul>
+				<li>
+					<p>HTTP 0.9 (for support of basic hypertext documents, 1991)</p>
+				</li>
+				<li>
+					<p>HTTP 1.0 (extensions to support rich websites and scalability, RFC 1945, May 1996)</p>
+				</li>
+				<li>
+					<p>HTTP 1.1 (developed to address performance limitations of HTTP 1.0, specified in Internet RFC 2068, January 1997)</p>
+				</li>
+				<li>
+					<p>HTTP 2.0 (latest version and maintains backward compatibility with HTTP 1.1 but offers additional performance enhancements,
+                RFC 7540, May 2015)</p>
+				</li>
+			</ul>
+		</section>
+	</div>
+	<div>
+		<h3>HTTP Fundamentals:</h3>
+		<section id="p5">
+			<ul>
+				<li>
+					<p>http is based on a client server architecture servers.</p>
+				</li>
+				<li>
+					<p>uses a request-response standard protocol (the client will send an http request message).</p>
+				</li>
+				<li>
+					<p>a "stateless" communication protocol means, the HTTP connection is dropped once the request has been made. Servers do not keep  information about clients in between requests.</p>
+				</li>
+			</ul>
+		</section>
+			<h3>HTTP provides support for other functionalities such as:</h3>
+		<section>
+			<ul>
+				<li>
+					<p>cache control</p>
+				</li>
+				<li>
+					<p>language and character set specifications</p>
+				</li>
+				<li>
+					<p>content negotiation allows the client to have preferences</p>
+				</li>
+				<li>
+					<p>content / transfer codings the message can be transmitted in compressed form</p>
+				</li>
+				<li>
+					<p>persistent connections</p>
+				</li>
+				<li>
+					<p>request pipelining / multiplexing</p>
+				</li>
+				<li>
+					<p>authorization and authentication to secure data</p>
+				</li>	
+			</ul>
+		</section>
+	</div>
+	<div>
+		<h1>HTTP Request Message</h1>
+		<section>
+			<p>Request Line -  begins with a method token, followed by the Request-URI and the protocol version, and ending with CRLF. The elements    are separated by SP characters. No CR or LF is allowed except in the final CRLF (Carriage Return, Line Field) sequence.
+			<br>
+   example:<br>
+        Request-Line = Method SP Request-URI SP HTTP-Version CRLF </p>
+		</section>
+		<h3>A request line consists of:</h3>
+		<section>
+			<p>*Method -  indicates the method to be performed on the resource identified by the Request-URI and it is case-sensitive.</p>
+			<table>
+				<caption>Request Methods:</caption>
+				<tr>
+					<th>GET</th>
+					<th>POST</th>
+					<th>CONNECT</th>
+					<th>PUT</th>
+					<th>HEAD</th>
+					<th>DELETE</th>
+					<th>OPTIONS</th>
+					<th>TRACE</th>
+				</tr>
+				<tr>
+					<td>most commonly used http method that is used to retrieve information from the given server using a given URL</td>
+					<td>typically used in submitting HTML form data</td>
+					<td>creates a tunnel to the server identified by a given URL</td>
+					<td>use to generate data or resources</td>
+					<td>use to create end to end virtual connections</td>
+					<td>for removing data or resources from the origin server</td>
+					<td>capabilities of the server</td>
+					<td>performs a message loop back test along with the path to the target resource</td>
+				</tr>
+			</table>
+		</section>
+		
+	</div>
 </body>
 
+	<footer>
+		
+	</footer>
 </html>
