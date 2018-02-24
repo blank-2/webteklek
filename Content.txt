@@ -1,0 +1,45 @@
+WORLD WIDE WEB (WWW)
+  - The world wide web (www) is the most important establishment because it is the collection of web resources, either static resources
+  or dynamic resources that we can access via the internet.
+  
+  - The world wide web (www) was established around 1990's and it is approximately 30 years old from now. It uses a client server architecture which means each computer or process on the network is either a client or a server.
+  
+ Who Invented the World Wide Web?
+  The world wide web is invented by Sir Tim Berners-Lee, a British computer scientist that was born in London. He invented the web in
+1989 while working at CERN (Conseil Européen pour la Recherche Nucléaire) a world-class fundamental physics research organization in Europe. Sir Tim Berners-Lee is also the director of the world wide web consortium, founded in 1994. The world wide web consortium is a global web standards organization to lead the web to it's full potential.
+
+  In October of 1990, Sir Tim Berners-Lee invented the 3 corner stone fundamental technologies that remain the foundation of today’s web
+  - HTML: HyperText Markup Language. The markup (formatting) language for the web.
+  - URI: Uniform Resource Identifier. A kind of “address” that is unique and used to identify to each resource on the web. It is also commonly called a URL.
+  - HTTP: Hypertext Transfer Protocol. Allows for the retrieval of linked resources from across the web.
+  
+  
+  HYPERTEXT TRANSFER PROTOCOL (HTTP)
+    - The hypertext transfer protocol (http) is used to access resources like hypertext, hypermedia on the world wide web.
+    - Jointly developed by the W3C and the IETF (Internet Engineering Task force).
+    Version History:
+     HTTP 0.9 (for support of basic hypertext documents, 1991)
+     HTTP 1.0 (extensions to support rich websites and scalability, RFC 1945, May 1996)
+     HTTP 1.1 (developed to address performance limitations of HTTP 1.0, specified in Internet RFC 2068, January 1997)
+     HTTP 2.0 (latest version and maintains backward compatibility with HTTP 1.1 but offers additional performance enhancements,
+                RFC 7540, May 2015)
+  
+  HTTP Fundamentals:
+  - http is based on a client server architecture servers.
+  - uses a request-response standard protocol (the client will send an http request message).
+  - a "stateless" communication protocol means, the HTTP connection is dropped once the request has been made. Servers do not keep               information about clients in between requests.
+  
+  HTTP provides support for other functionalities such as:
+  - cache control
+  - language and character set specifications
+  - content negotiation 
+        allows the client to have preferences
+  - content / transfer codings
+        the message can be transmitted in compressed form
+  - persistent connections
+  - request pipelining / multiplexing
+  - authorization and authentication
+        to secure data
+        
+  HTTP Request Message
+   
