@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+	
+	<header>
+		<meta charset="UTF-8">
+		<title>Web Systems and Technologies Lessons</title>
+	</header>
+	<style>
+	.navbar {
+		overflow: hidden;
+		background-color: #333;
+		font-family: Arial, Helvetica, sans-serif;
+	}
+
+	.navbar a {
+		float: left;
+		font-size: 16px;
+		color: white;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+	}
+
+	.dropdown {
+		float: left;
+		overflow: hidden;
+	}
+
+	.dropdown .dropbtn {
+		font-size: 16px;    
+		border: none;
+		outline: none;
+		color: white;
+		padding: 14px 16px;
+		background-color: inherit;
+		font-family: inherit;
+		margin: 0;
+	}
+
+	.navbar a:hover, .dropdown:hover .dropbtn {
+		background-color: red;
+	}
+
+	.dropdown-content {
+		display: none;
+		position: absolute;
+		background-color: #f9f9f9;
+		min-width: 160px;
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		z-index: 1;
+	}
+
+	.dropdown-content a {
+		float: none;
+		color: black;
+		padding: 12px 16px;
+		text-decoration: none;
+		display: block;
+		text-align: left;
+	}
+
+	.dropdown-content a:hover {
+		background-color: #ddd;
+	}
+
+	.dropdown:hover .dropdown-content {
+		display: block;
+	}
+</style>
+<body>
+	<div class="navbar">
+	  <a href="index.html">Home</a>
+	  	<div class="dropdown">
+		<button class="dropbtn">Topics 
+		  <i class="topics"></i>
+		</button>
+		<div class="dropdown-content">
+		  <a href="www.html">WORLD WIDE WEB (WWW)</a>
+		  <a href="http.html">HYPERTEXT TRANSFER PROTOCOL (HTTP)</a>
+		  <a href="html.html">HTML</a>
+		</div>
+	  </div> 
+	  <a href="aboutUs.html">About Us</a>
+	</div>
+	<div>
+		<h1>HYPERTEXT TRANSFER PROTOCOL (HTTP)</h1>
+		<section>
+			<p>The hypertext transfer protocol (http) is used to access resources like hypertext, hypermedia on the world wide web.</p>
+			<p>Jointly developed by the W3C and the IETF (Internet Engineering Task force).</p>
+		</section>
+			<h3>Version History:</h3>
+		<section>
+			<ul>
+				<li>
+					<p>HTTP 0.9 (for support of basic hypertext documents, 1991)</p>
+				</li>
+				<li>
+					<p>HTTP 1.0 (extensions to support rich websites and scalability, RFC 1945, May 1996)</p>
+				</li>
+				<li>
+					<p>HTTP 1.1 (developed to address performance limitations of HTTP 1.0, specified in Internet RFC 2068, January 1997)</p>
+				</li>
+				<li>
+					<p>HTTP 2.0 (latest version and maintains backward compatibility with HTTP 1.1 but offers additional performance enhancements,
+                RFC 7540, May 2015)</p>
+				</li>
+			</ul>
+		</section>
+	</div>
+	<div>
+		<h3>HTTP Fundamentals:</h3>
+		<section id="p5">
+			<ul>
+				<li>
+					<p>http is based on a client server architecture servers.</p>
+				</li>
+				<li>
+					<p>uses a request-response standard protocol (the client will send an http request message).</p>
+				</li>
+				<li>
+					<p>a "stateless" communication protocol means, the HTTP connection is dropped once the request has been made. Servers do not keep  information about clients in between requests.</p>
+				</li>
+			</ul>
+		</section>
+			<h3>HTTP provides support for other functionalities such as:</h3>
+		<section>
+			<ul>
+				<li>
+					<p>cache control</p>
+				</li>
+				<li>
+					<p>language and character set specifications</p>
+				</li>
+				<li>
+					<p>content negotiation allows the client to have preferences</p>
+				</li>
+				<li>
+					<p>content / transfer codings the message can be transmitted in compressed form</p>
+				</li>
+				<li>
+					<p>persistent connections</p>
+				</li>
+				<li>
+					<p>request pipelining / multiplexing</p>
+				</li>
+				<li>
+					<p>authorization and authentication to secure data</p>
+				</li>	
+			</ul>
+		</section>
+	</div>
+	<div>
+		<h1>HTTP Request Message</h1>
+		<section>
+			<p>Request Line -  begins with a method token, followed by the Request-URI and the protocol version, and ending with CRLF. The elements    are separated by SP characters. No CR or LF is allowed except in the final CRLF (Carriage Return, Line Field) sequence.
+			<br>
+			example:<br>
+			Request-Line = Method SP Request-URI SP HTTP-Version CRLF </p>
+		</section>
+		<h3>A request line consists of:</h3>
+		<section>
+			<p>*Method -  indicates the method to be performed on the resource identified by the Request-URI and it is case-sensitive.</p>
+			<table>
+				<caption>Request Methods:</caption>
+				<tr>
+					<th>Request Methods:</th>
+					<th>USES</th>
+				</tr>
+				<tr>	
+					<td>GET</td> 
+					<td>most commonly used http method that is used to retrieve information from the given server using a given URL</td>
+				</tr>
+				<tr>	
+					<td>POST</td> 
+					<td>typically used in submitting HTML form data</td>
+				
+				</tr>
+				<tr>	
+					<td>CONNECT</td> 
+					<td>creates a tunnel to the server identified by a given URL</td>
+				</tr>
+				<tr>	
+					<td>PUT</td> 
+					<td>use to generate data or resources</td>
+				</tr>
+				<tr>	
+					<td>HEAD</td> 
+					<td>use to create end to end virtual connections</td>
+				</tr>
+				<tr>	
+					<td>DELETE</td> 
+					<td>for removing data or resources from the origin server</td>
+				</tr>
+				<tr>	
+					<td>OPTIONS</td> 
+					<td>capabilities of the server</td>	
+				</tr>
+				<tr>	
+					<td>TRACE</td>
+					<td>performs a message loop back test along with the path to the target resource</td>
+				</tr>
+			</table>
+		</section>
+		
+	</div>
+</body>
+
+	<footer>
+		
+	</footer>
+</html>

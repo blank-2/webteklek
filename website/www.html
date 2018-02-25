@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+	
+	<header>
+		<meta charset="UTF-8">
+		<title>Web Systems and Technologies Lessons</title>
+	</header>
+	<style>
+	.navbar {
+		overflow: hidden;
+		background-color: #333;
+		font-family: Arial, Helvetica, sans-serif;
+	}
+
+	.navbar a {
+		float: left;
+		font-size: 16px;
+		color: white;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+	}
+
+	.dropdown {
+		float: left;
+		overflow: hidden;
+	}
+
+	.dropdown .dropbtn {
+		font-size: 16px;    
+		border: none;
+		outline: none;
+		color: white;
+		padding: 14px 16px;
+		background-color: inherit;
+		font-family: inherit;
+		margin: 0;
+	}
+
+	.navbar a:hover, .dropdown:hover .dropbtn {
+		background-color: red;
+	}
+
+	.dropdown-content {
+		display: none;
+		position: absolute;
+		background-color: #f9f9f9;
+		min-width: 160px;
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		z-index: 1;
+	}
+
+	.dropdown-content a {
+		float: none;
+		color: black;
+		padding: 12px 16px;
+		text-decoration: none;
+		display: block;
+		text-align: left;
+	}
+
+	.dropdown-content a:hover {
+		background-color: #ddd;
+	}
+
+	.dropdown:hover .dropdown-content {
+		display: block;
+	}
+</style>
+<body>
+	<div class="navbar">
+	  <a href="index.html">Home</a>
+	  	<div class="dropdown">
+		<button class="dropbtn">Topics 
+		  <i class="topics"></i>
+		</button>
+		<div class="dropdown-content">
+		  <a href="www.html">WORLD WIDE WEB (WWW)</a>
+		  <a href="http.html">HYPERTEXT TRANSFER PROTOCOL (HTTP)</a>
+		  <a href="html.html">HTML</a>
+		</div>
+	  </div> 
+	  <a href="aboutUs.html">About Us</a>
+	</div>
+	<div id="www">
+		<h1>WORLD WIDE WEB (WWW)</h1>
+		<section id="p1">
+			<p>The world wide web (www) is the most important establishment because it is the collection of web resources, either static resources
+			or dynamic resources that we can access via the internet.</p>
+		</section>
+		<section id="p2">
+			<p>The world wide web (www) was established around 1990's and it is approximately 30 years old from now. It uses a client server architecture which means each computer or process on the network is either a client or a server.</p>
+		</section>
+	</div>
+	<div>
+		<h1>Who Invented the World Wide Web?</h1>
+		<section id="p3">
+			<p>The world wide web is invented by Sir Tim Berners-Lee, a British computer scientist that was born in London. He invented the web in
+1989 while working at CERN (Conseil Européen pour la Recherche Nucléaire) a world-class fundamental physics research organization in Europe. Sir Tim Berners-Lee is also the director of the world wide web consortium, founded in 1994. The world wide web consortium is a global web standards organization to lead the web to it's full potential.</p>
+		</section>
+		<section id="p4">
+			<p>In October of 1990, Sir Tim Berners-Lee invented the 3 corner stone fundamental technologies that remain the foundation of today’s web</p>
+			<p>  - HTML: HyperText Markup Language. The markup (formatting) language for the web.</p>
+			<p>  - URI: Uniform Resource Identifier. A kind of “address” that is unique and used to identify to each resource on the web. It is also commonly called a URL.</p>
+			<p>  - HTTP: Hypertext Transfer Protocol. Allows for the retrieval of linked resources from across the web.</p> 
+		</section>
+	</div>
+</body>
+
+	<footer>
+		
+	</footer>
+</html>
