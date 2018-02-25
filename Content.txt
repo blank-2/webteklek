@@ -52,11 +52,16 @@ WORLD WIDE WEB (WWW)
         Request Methods:     // eto rin itable pwede rin
           GET - most commonly used http method that is used to retrieve information from the given server using a given URL
           POST - typically used in submitting HTML form data
+
           CONNECT - creates a tunnel to the server identified by a given URL
           PUT - use to generate data or resources
           HEAD - use to create end to end virtual connections
+               - similar to the GET Method except that the server does not and must not return a message-body in the response.
+               - response to head request may be cacheable.
           DELETE - for removing data or resources from the origin server
           OPTIONS - capabilities of the server
+                  - method that represents a request information about the communication options available.
+                  - responses to this method are cacheable.
           TRACE - performs a message loop back test along with the path to the target resource
         Method Properties:
            Safe Method: client does not request and does not expect (read-only method)  // eto pwedeng itable para organize
@@ -86,6 +91,10 @@ WORLD WIDE WEB (WWW)
            - Redirection (3xx)
            - Client Error (4xx)
            - Server Error (5xx)
+           - 200 OK
+           - 400 Bad Request
+           - 403 Forbidden
+           - 404 Not Found
         *Reason Phrase
         
    -Message Headers (general, request and/or entity headers)
