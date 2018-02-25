@@ -77,6 +77,18 @@ WORLD WIDE WEB (WWW)
          allows the client to pass additional information about the request, about the client itself, and the server
   -Empty Line (CRLF)
   -Message Body a.k.a payload (optional)
+  
+  Content Codings
+      -are used to to allow documents to be compressed or usefully transformed without losing the identity of its media type and without        loss of info.
+  gzip - it is produced by file compression program "gzip". An encoding format in a Lempel-Ziv coding.
+  compress - the common Unix file compression program "compress" produced this encoding format. An encoding format in a Lempel-Ziv       Welch.
+  
+  Transfer Codings
+  -in order to ensure "safe transport" thorugh the network , values of tranport-codings are used to indicate encoding transformation        that has been or can be or may need to be applied to an entity body.
+  
+  Chunked Transfer Coding
+  -it modifies body of messaged in order to transfer it as a series of chunks. It allows content to be dynamically produced to be          transferred along with the information necessary for the recipient to verify that it has received full message.
+  
    
   HTTP Response Message
    -Status Line - consists of the protocol version followed by a numeric status code and its associated textual phrase, with each            element separated by SP characters. No CR or LF is allowed except in the final CRLF (Carriage Return, Line Field) sequence.
