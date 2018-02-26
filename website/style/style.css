@@ -93,3 +93,7 @@ footer{
 div {
 	line-height: 1.6;
 }
+
+table, th, td {
+    border: 1px solid black;
+}
