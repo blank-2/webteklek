@@ -66,6 +66,10 @@
 	.dropdown:hover .dropdown-content {
 		display: block;
 	}
+
+	table, th, td {
+    border: 1px solid black;
+	}
 </style>
 <body>
 	<div class="navbar">
@@ -160,7 +164,7 @@
 		<h3>A request line consists of:</h3>
 		<section>
 			<p>*Method -  indicates the method to be performed on the resource identified by the Request-URI and it is case-sensitive.</p>
-			<table>
+			<table style="width: 100%">
 				<caption>Request Methods:</caption>
 				<tr>
 					<th>Request Methods:</th>
@@ -185,7 +189,10 @@
 				</tr>
 				<tr>	
 					<td>HEAD</td> 
-					<td>use to create end to end virtual connections</td>
+					<td>use to create end to end virtual connections<br>
+						similar to the GET Method except that the server does not and must not return a message-body in the response.<br>
+						response to head request may be cacheable
+					</td>
 				</tr>
 				<tr>	
 					<td>DELETE</td> 
@@ -193,7 +200,10 @@
 				</tr>
 				<tr>	
 					<td>OPTIONS</td> 
-					<td>capabilities of the server</td>	
+					<td>capabilities of the server<br>
+						method that represents a request information about the communication options available<br>
+						responses to this method are cacheable.
+					</td>	
 				</tr>
 				<tr>	
 					<td>TRACE</td>
@@ -201,7 +211,125 @@
 				</tr>
 			</table>
 		</section>
-		
+		<section>
+			<table style="width: 100%">
+				<caption>Method Properties</caption>
+				<tr>
+					<th>Safe Method:</th>
+					<th>Idempotent Method:</th>
+					<th>Cacheable Methods:</th>
+				</tr>
+				<tr>
+					<td>client does not request and does not expect (read-only method)</td>
+					<td>the result will exist GET, HEAD, OPTIONS, TRACE, PUT, DELETE</td>
+					<td>allows us to store re use data for future use GET, HEAD, POST </td>
+				</tr>
+			</table>
+		</section>
+	</div>
+	<div>
+		<h1>Content Codings</h1>
+		<section>
+			<p>Are used to to allow documents to be compressed or usefully transformed without losing the identity of its media type and without loss of info.<br>
+  			gzip - it is produced by file compression program "gzip". An encoding format in a Lempel-Ziv coding.<br>
+  			compress - the common Unix file compression program "compress" produced this encoding format. An encoding format in a Lempel-Ziv       Welch.</p>
+		</section>
+		<h1>Transfer Codings</h1>
+		<section>
+			<p>In order to ensure "safe transport" thorugh the network , values of tranport-codings are used to indicate encoding transformation that has been or can be or may need to be applied to an entity body.</p>
+		</section>
+		<h1>Chunked Transfer Coding</h1>
+		<section>
+			<p>It modifies body of messaged in order to transfer it as a series of chunks. It allows content to be dynamically produced to be          transferred along with the information necessary for the recipient to verify that it has received full message.</p>
+		</section>
+	</div>
+	<div>
+		<h1>HTTP Response Message</h1>
+		<section>
+			<p>Status Line - consists of the protocol version followed by a numeric status code and its associated textual phrase, with each            element separated by SP characters. No CR or LF is allowed except in the final CRLF (Carriage Return, Line Field) sequence.<br>
+				example:<br>
+				Status-Line = HTTP-Version SP Status-Code SP Reason-Phrase CRLF
+			</p>
+			<h4>A status line consists of:</h4>
+			<ul>
+				<li>
+					<p>Informational (1xx)</p>
+				</li>
+				<li>
+					<p>Success (2xx)</p>
+				</li>
+				<li>
+					<p>Redirection (3xx)</p>
+				</li>
+				<li>
+					<p>Client Error (4xx)</p>
+				</li>
+				<li>
+					<p>Server Error (5xx)</p>
+				</li>
+				<li>
+					<p>200 OK</p>
+				</li>
+				<li>
+					<p>400 Bad Request</p>
+				</li>
+				<li>
+					<p>403 Forbidden</p>
+				</li>
+				<li>
+					<p>404 Not Found</p>
+				</li>
+			</ul>
+		</section>
+	</div>
+	<div>
+		<h1>Message Headers</h1>
+		<p>allows the client to pass additional information about the request, about the client itself, and the server<br>
+		Empty Line (CRLF)<br>
+   		Message Body a.k.a payload (optional)
+		</p>
+		<section>
+			<p>
+				Http resources are identified using URIs or more specifically, Http URLs.
+			</p>
+			<table style="width: 100%">
+				<caption>Syntax of URIs (RFC 7230, section 2.7)</caption>
+				<tr>
+					<th>Scheme</th>
+					<th>Authority</th>
+					<th>Port</th>
+					<th>Path</th>
+					<th>Query</th>
+					<th>Fragment</th>
+				</tr>
+				<tr>
+					<td>http or https is the protocol</td>
+					<td>the domain name (www.inserthere.com)</td>
+					<td>technical "gate" used to access the resources on the web server (80 for http)</td>
+					<td>may refer to a root on the server (/path/to/webtech.html)</td>
+					<td>a list of key/value pairs separated with the '&' symbol (?web1=value1&web2=value2)</td>
+					<td>short string of characters that refers to a resource that is subordinate to another, primary resource.</td>
+				</tr>
+			</table>
+		</section>
+	</div>
+	<div>
+		<h1>HTTP EXTENSION</h1>
+		<section>
+			<p>Example:</p>
+			<p>WEBDav (Web Distributed Authoring and Versioning)</p>
+			<ul>
+				<li>
+					<p>Allows clients to perform remote Web content authoring operations.</p>
+				</li>
+				<li>
+					<p>RFC 4918</p>
+				</li>
+				<li>
+					<p>Some request methods: mkcol, copy, move, lock, unlock, propfind and proppatch.</p>
+				</li>
+			</ul>
+		</section>
 	</div>
 </body>
 
