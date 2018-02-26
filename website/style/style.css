@@ -102,7 +102,6 @@ table, th, td {
     border: 1px solid black;
 }
 
-<<<<<<< HEAD
 h2#ref{
 	text-align: left;
 	border-bottom: 1px solid;
@@ -114,7 +113,6 @@ div.reference{
 	list-style-type: decimal;
 	text-align: left;	
 }
-=======
 /**About US**/
 
 #sec1a {
@@ -248,4 +246,3 @@ div.reference{
     filter:blur(3px);
     transition: 0.5s;
 }
->>>>>>> b152718401b8d11e34fbbd57f5fce898e908961b
