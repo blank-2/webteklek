@@ -49,7 +49,7 @@ WORLD WIDE WEB (WWW)
         
     A request line consists of:
       *Method -  indicates the method to be performed on the resource identified by the Request-URI and it is case-sensitive.
-        Request Methods:     // eto rin itable pwede rin
+        Request Methods:     
           GET - most commonly used http method that is used to retrieve information from the given server using a given URL
           POST - typically used in submitting HTML form data
 
@@ -64,7 +64,7 @@ WORLD WIDE WEB (WWW)
                   - responses to this method are cacheable.
           TRACE - performs a message loop back test along with the path to the target resource
         Method Properties:
-           Safe Method: client does not request and does not expect (read-only method)  // eto pwedeng itable para organize
+           Safe Method: client does not request and does not expect (read-only method)  
                         GET, HEAD, OPTIONs, TRACE
            Idempotent Methods: the result will exist
                                 GET, HEAD, OPTIONS, TRACE, PUT, DELETE
@@ -98,7 +98,7 @@ WORLD WIDE WEB (WWW)
        A status line consists of:
         *Protocol Version
         *Status Code
-           - Informational (1xx)    //pwedeng link ng list ng mga status codes or itable natin
+           - Informational (1xx)    
            - Success (2xx)
            - Redirection (3xx)
            - Client Error (4xx)
@@ -144,8 +144,8 @@ WORLD WIDE WEB (WWW)
              - HTML tags by Sir Tim Berners-Lee, late 1991
              - HTML draft by Tim Berners-Lee and Dan Cannolly published by the IETF in mid 1993
         Standards
-             - HTML 2.0 (RFC 18866, nov 1995)         // maganda yata dito i link nlng natin yung pag pipindutin sa site nila ganern or
-             - HTML 3.2 (W3C Recommendation, Jan 1997)          kailagan pa tyon din gagawa non?
+             - HTML 2.0 (RFC 18866, nov 1995)         
+             - HTML 3.2 (W3C Recommendation, Jan 1997)         
              - HTML 4.0 (W3C Recommendation, Dec 1997)
              - HTML 4.01 (W3C Recommendation,Dec 1999)
                
