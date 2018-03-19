@@ -8,13 +8,37 @@ HTML StyleSheets
   -the sources of stules for HTML documents
     > Author Styles
       -external (a.k.a linked) stylesheets 
-          An external style sheet is a separate file where you can declare all the styles that you want to use on your website. You then            link to the external style sheet from all your HTML pages.
+           An external style sheet is a separate file where you can declare all the styles that you want to use on your website. You                then link to the external style sheet from all your HTML pages.
       -embedded (a.k.a internal) stylesheets
-          An internal stylesheet holds the CSS code for the webpage in the head section of the particular file. This makes it easy to             apply styles like classes or id's in order to reuse the code. The downside of using an internal stylesheet is that changes to the         internal stylesheet only effect the page the code is inserted into
+          An internal stylesheet holds the CSS code for the webpage in the head section of the particular file. This makes it easy to             apply styles like classes or id's in order to reuse the code. The downside of using an internal stylesheet is that changes to           the internal stylesheet only effect the page the code is inserted into
       
       -Inline Styles
-          The Inline style is specific to the tag itself. The inline style uses the HTML "style" attribute to style a specific tag. This           is not recommended, as every CSS change has to be made in every tag that has the inline style applied to it. The Inline style is           good for one an individual CSS change that you do not use repeatedly through the site.
- 
+          The Inline style is specific to the tag itself. The inline style uses the HTML "style" attribute to style a specific tag. This           is not recommended, as every CSS change has to be made in every tag that has the inline style applied to it. The Inline style           is good for one an individual CSS change that you do not use repeatedly through the site.
+          
+    > User Styles
+      - Some browsers provide (non-standard) alternatives through plug-ins/ Etensions like Stylish.
+      
+    > User Agent Styles
+      - Sample default user agent sheet from css 2.1
+      - the source of a style denotes its origin, which is used in determining its precedence in the cascade.
+      
+CSS Statements
+ - at rules
+   > It is a CSS statement beginning with an at sign, '@' (U+0040 COMMERCIAL AT), then followed by an identifier and includes everything up to the next semi-colon, ';' (U+003B SEMICOLON), or the next CSS block, whichever comes first.
+   
+   Several at rules :
+   @charset — Defines the character set used by the style sheet.
+   @import — Tells the CSS engine to include an external style sheet.
+   @namespace — Tells the CSS engine that all its content must be considered prefixed with an XML namespace.
+   Nested at-rules — A subset of nested statements, which can be used as a statement of a style sheet as well as inside of conditional group rules:
+        -@media — A conditional group rule that will apply its content if the device meets the criteria of the condition defined using a media query.
+        -@font-face — Describes the aspect of an external font to be downloaded.
+        -@keyframes — Describes the aspect of intermediate steps in a CSS animation sequence.
+
+ - css rules sets (CSS Rules, Style rules)
+    Css allows applying different declarations to different parts of the document by associating conditions with declarations blocks.
+   > It consists of a selector, brace, enlcosed declaration box which contains zero or more semi-colo(;) separated property declaration
+     
       
       
       
@@ -26,3 +50,4 @@ HTML StyleSheets
       https://www.w3schools.com/css/css_howto.asp
       https://www.quackit.com/css/external_style_sheets.cfm
       https://www.inmotionhosting.com/support/edu/website-design/using-css/linking-your-css-to-your-website
+      https://developer.mozilla.org/en-US/docs/Web/CSS/Syntax
