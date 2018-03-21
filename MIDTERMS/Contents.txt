@@ -48,7 +48,20 @@ CSS Statements
     Css allows applying different declarations to different parts of the document by associating conditions with declarations blocks.
    > It consists of a selector, brace, enlcosed declaration box which contains zero or more semi-colo(;) separated property declaration
      
-      
+ CSS Selectors
+ >
+ 
+ 
+ Selector Syntax
+ - Chain of one or more sequences of simple separators separated by combinators with one pseudo-element possibly appended to the last sequence.
+ 
+ Simple Selectors
+ >UNIVERSAL SELECTORS-
+ >TYPE SELECTORS
+ >ID SELECTORS
+ >CLASS SELECTORS
+ >ATTRIBUTE SELECTORS
+ >PSEUDO SELECTORS
       
       
       
