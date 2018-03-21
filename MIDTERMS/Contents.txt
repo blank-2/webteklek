@@ -62,6 +62,16 @@ CSS Statements
  >CLASS SELECTORS
  >ATTRIBUTE SELECTORS
  >PSEUDO SELECTORS
+ 
+ Sequence of Simple Selectors
+    Chain of simple selectors not separated by combinators.
+    
+ Selector Group 
+ >
+ 
+ 
+ Combinators
+  >descendant combinator 
       
       
       
