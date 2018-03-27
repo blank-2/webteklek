@@ -124,6 +124,26 @@ CSS Statements
         The origin of a declaration is based on where it comes from and it's importance is whether or not it is declared "important".
         
         The precedence of the various origin is in DESCENDING order.
+        1.Transition Declarations
+        2.Important user agent declarations
+        3.Important user declarations
+        4.Important override decalarations
+        5.Important author declarations
+        6.Animation Declarations
+        7.Normal Override Declarations
+        8.Normal Author declarations
+        9.Normal User Decalrations
+        10.Normal User Agent Declarations
+        
+        Declaration from origins earlier in this list win over declaration from taken origins.
+        
+        Properties
+        -Shorthand Properties
+            >allows authors to specify the values of several properties with a single properties.
+            eg. background,font,margin,padding,border etc.
+        -vendor specific extensions (a.k.a vendor prefixes)
+            >used by browser vendors as a prefix for the names of experimental/non-standard CSS properties: lately, verndors are moving away from vendor prefixes in favor of user-controlled flags or preferences.
+            eg. -webkit-, -moz-, -o-, -ms-, etc
         
  
       
