@@ -143,7 +143,41 @@ CSS Statements
             eg. background,font,margin,padding,border etc.
         -vendor specific extensions (a.k.a vendor prefixes)
             >used by browser vendors as a prefix for the names of experimental/non-standard CSS properties: lately, verndors are moving away from vendor prefixes in favor of user-controlled flags or preferences.
-            eg. -webkit-, -moz-, -o-, -ms-, etc
+            eg. -webkit-, -moz-, -o-, -ms-, etc.
+            
+        -Custom properties (a.k.a CSS variables or Experimental)
+            >property names prefixed list --, representing a value that can be accessed throughout the document using the var() function.
+            
+         -Values
+            >Value representing
+              -declared,cascaded,specified,computed,used,actual values
+            >Value types
+            >length units
+              eg. font-relative
+            >angle units
+            >duration
+            >frequent units
+            
+   The final value of CSS property for a given element /box is the result of a multi-step calculation.
+  
+  // still under construction
+  -percentages
+  -operentages
+  
+  CSS Preprocessors, Frameworks and Polyfills
+  
+ -CSS Preprocessors
+  >generates CSS using a custom language, syntax that typically includes features that don't exist in pure CSS
+  for example variables, control flow, nesting, mixims, functions and others.
+  
+  -CSS Frameworks
+  >provides predefined CSS design functionality that can be viewed, extended or customized
+  >Bootsrap,foundation,materalize
+  
+  -POLYFILLS
+  
+  
+  ----------------------JAVASCRIPT-------------------------------
         
  
       
