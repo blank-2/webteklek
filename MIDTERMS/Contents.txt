@@ -85,7 +85,7 @@ CSS Statements
       -user action-classes
         :hover,:active,:focus
     *Target Pseudo-class
-      -:target
+       -:target
     *Language Pseudo-class
       -:lang()
     *UI Element states
@@ -97,7 +97,35 @@ CSS Statements
       
       
       Pseudo Elements
+      > :first-letter, :: first-letter
+      > :first-line, :: first-line
+      > :before, ::before
+      > :after, ::after
       
+      Selector Group - comma separated list of selectors representing the union of all elements selected by each of the selectors in the list.
+      
+      Accordion-//find description
+      
+      CSS Selectors
+        CSS Rule Precedence
+        - HTML element may be the subject of the selectors of multiple styles roles.
+        
+        - When such rules target different properties, their effects cascade are combined.
+        
+        - When the styles involve the same priority, they conflict and must be resolved such that the only one style is applied.
+        
+        - Resolution: 
+          >by origin and importance
+          >by specifity
+          >by order
+          
+          
+       Origin and Importance
+        The origin of a declaration is based on where it comes from and it's importance is whether or not it is declared "important".
+        
+        The precedence of the various origin is in DESCENDING order.
+        
+ 
       
       
       
