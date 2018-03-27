@@ -71,8 +71,32 @@ CSS Statements
  
  
  Combinators
-  >descendant combinator 
+  >descendant combinator eg.()
+  >child combinator(>)
+  >sibling combinators
+    -adjacent sibling combinator(+)
+    -general sibling combinator(~)
+   
+   Pseudo classes - characteristics associated with content due to an action done on the content.
+   
+    *Dynamic Pseudo classes
+      -link psedudo-classes
+        :link,:visited
+      -user action-classes
+        :hover,:active,:focus
+    *Target Pseudo-class
+      -:target
+    *Language Pseudo-class
+      -:lang()
+    *UI Element states
+      -:enabled,:disabled,:checked,:intermediate
+    *Structural states
+      -:root,:first-child,:last-child,:only-child
+      -:nth-child,:nth-last-child()
+      -:first-of-type,:last-of-type,:only-of-type,:nth-of-type
       
+      
+      Pseudo Elements
       
       
       
