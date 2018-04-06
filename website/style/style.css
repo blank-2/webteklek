@@ -126,7 +126,10 @@ div.reference{
 	font-family:theboldfont_0;
 	text-align: center;
 }
-
+.aboutUsPicture {
+	width :  10%;
+	height : 10%;
+}
 #auth1{
 	overflow:hidden;
 	width:90%;
