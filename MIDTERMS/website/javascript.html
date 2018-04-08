@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Web Systems and Technologies Lessons</title>
+		<link rel="StyleSheet" type="text/css" href="style/style.css">
+	</head>
+<body>
+	<header>
+		<nav class="navbar">
+			<a href="index.html"><img src="images/logo.png" id="logo" alt="alt-logo"></a>
+			<a href="index.html" class="navi-button">Home</a>
+			<div class="dropdown">
+				<button class="dropbtn">Topics 
+		  			<i class="topics"></i>
+				</button>
+				<div class="dropdown-content">
+		  			<a href="www.html">World Wide Web (WWW)</a>
+		  			<a href="http.html">Hypertext Transfer Protocol (HTTP)</a>
+		  			<a href="html.html">Hypertext Markup Language (HTML)</a>
+		  			<a href="css.html">Cascading Style Sheet (CSS)</a>
+		  			<a href="javascript.html">JavaScript</a>
+				</div>
+	  		</div> 
+	  		<a href="aboutUs.html" class="navi-button">About Us</a>
+	</div>
+	<div id="www">
+		</nav>
+	</header>
+	<div class="container">
+	<h1>Brief History of JavaScript</h1>
+	<div>
+		<section id="p1">
+			<p id="histo1"><span style="margin-left: 4em">
+				JavaScript sometimes called as "JS" is an object-oriented programming language and web based programming language that powers the behavior of a website. In 1995, JavaScript was created by Brendan Eich during his time at Netscape communications and javascript later became an ECMA standard in 1997. 
+			</p>
+		</section>
+	</div>
+	<div>
+		<h1>JavaScript Execution Environment</h1>
+		<section id="p3">
+			<ul>
+				<li>
+					<p>
+						Core JavaScript(EcmaScript) Language and API
+					</p>
+				</li>
+				<li>
+					<p>
+						(Traditional) Browser Object Model(BOM) API (non-standardized)
+					</p>
+				</li>
+				<li>
+					<p>
+						window,navigationscreen,location history
+					</p>
+				</li>
+			</ul>
+			<h3>Keywords:</h3>
+			<ul>
+				<li>
+					<p><b>Defer</b>- The execution of script is deffered. Not executed instantly</p>
+				</li>
+				<li>
+					<p><b>Async</b>- It executes the code in parellel.</p>
+				</li>
+			</ul>
+		</section>
+		<h1>Document Object Model (DOM)</h1>
+		<section id="p4">
+			<ul>
+				<li>
+					<p>
+						an abstract model that defines the interface between HTML documents and application programs
+					</p>
+				</li>
+				<li>
+					<p>
+						represents the object and the entire structure of the object is embodied in a tree like structure.
+					</p>
+				</li>
+				<li>
+					<p>
+						DOM is a programming API that allows access for HTML and XML documents.
+					</p>
+				</li>
+			</ul>
+			<h3>Functionalitites:</h3>
+			<p>- getElementId()</p>
+			<p>- getElementsByTagName(), getElementsByClassname(), getElementsByName()</p>
+			<p>- querySelector(), querySelectorAll()</p>
+			<h2>Basic Language Features</h2>
+			<ul>
+				<li>Paradigm
+					<ul>
+						<li>Object-oriented (prototype-based)</li>
+						<li>Functional</li>
+						<li>Imperative Scripting Language</li>
+					</ul>
+				</li>
+				<li>Java/C like Syntax
+					<ul>
+						<li>Implicit semicolon insertion for statement termination</li>
+						<li>Identifiers are alphanumeric, _, and $ characters</li>
+						<li>Single-line (//) or block (/**/) comments</li>
+					</ul>
+				</li>Type system and variable scoping rules
+					<ul>
+						<li>Dynamic (aka loose or weak) typing</li>
+						<li>Global (aka top-level) or local scopes</li>
+						<li>Data types:
+							<ul>
+								<li>Primitive types
+									<ul>
+										<li>Numbers (decimal, hexadecimal notation)</li>
+										<li>Booleans (true, false)</li>
+										<li>Strings (Single or Double quote delimited)</li>
+										<li>Undefined and Null</li>
+									</ul>
+								</li>
+								<li>Composite(object)types
+									<ul>
+										<li>Core Javascript Object</li>
+										<li>Object, Number, Boolean, String, Date, Math, Global, RegExp, Error</li>
+										<li>Arrays</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</ul>
+		</section>
+		<h1>JavaScript Event Handling</h1>
+		<section>
+			<ul>
+				<li>An event is a notification that something specific has occurred, either with the browser or an action of the browser user.</li>
+				<li>An event handler is a script that is implicitly executed in response to the appearance of an event.</li>
+			</ul>
+		</section>
+		<h1> Event Propagation Order (DOM compliant browsers)</h1>
+		<section>
+			<ul>
+				<li>Capture phase: propagate or capture inwards</li>
+				<li>At Targer</li>
+				<li>Bubbling phase: propagate or capture outwards implementation use by Microsoft</li>
+			</ul>
+		</section>
+		<h1>JavaScript HTML DOM Events</h1>
+		<section>
+			<ul>
+				<li>Examples of HTML events:
+					<ul>
+						<li>When a user clicks the mouse</li>
+						<li>When a web page has loaded</li>
+						<li>When an image has been loaded</li>
+						<li>When the mouse moves over an element</li>
+						<li>When an input field is changed</li>
+						<li>When an HTML form is submitted</li>
+						<li>When a user strokes a key</li>
+					</ul>
+				</li>
+			</ul>
+
+			<table>
+				<tr>
+					<th>Events:</th>
+					<th>Event Tag Attribute:</th>
+				</tr>
+				<tr>
+					<td>abort</td>
+					<td>onAbort</td>
+				</tr>
+				<tr>
+					<td>blur</td>
+					<td>onBlur</td>
+				</tr>
+				<tr>
+					<td>change</td>
+					<td>onChange</td>
+				</tr>
+				<tr>
+					<td>click</td>
+					<td>onClick</td>
+				</tr>
+				<tr>
+					<td>error</td>
+					<td>onError</td>
+				</tr>
+				<tr>
+					<td>focus</td>
+					<td>onFocus</td>
+				</tr>
+				<tr>
+					<td>load</td>
+					<td>onLoad</td>
+				</tr>
+				<tr>
+					<td>mouseout</td>
+					<td>onMouseOut</td>
+				</tr>
+				<tr>
+					<td>mouseover</td>
+					<td>onMouseOver</td>
+				</tr>
+				<tr>
+					<td>reset</td>
+					<td>onReset</td>
+				</tr>
+				<tr>
+					<td>resize</td>
+					<td>onResize</td>
+				</tr>
+				<tr>
+					<td>select</td>
+					<td>onSelect</td>
+				</tr>
+				<tr>
+					<td>submit</td>
+					<td>onSubmit</td>
+				</tr>
+				<tr>
+					<td>unload</td>
+					<td>onUnload</td>
+				</tr>
+			</table>
+		</section>
+	</div>
+	</div>
+	<h2 class="ref">References</h2>
+			<div class="reference">
+				<ol class="reference-list">
+					<li>
+						<p>History of the Web. (n.d.). Retrieved February 23, 2018, from https://www.webfoundation.org/about/vision/history-of-the-web/
+						</p>
+					</li>
+					<li>
+						<p>
+							Sir Tim Berners-Lee. (n.d.). Retrieved February 23, 2018, from https://webfoundation.org/about/sir-tim-berners-lee/
+						</p>
+					</li>
+					<li>
+						<p>
+							(n.d.). Retrieved February 24, 2018, from https://www.w3.org/Protocols/rfc2616/rfc2616.html
+						</p>
+					</li>
+					<li>
+						<p>
+							Mitchell, B. (n.d.). What Does HTTP Mean? Retrieved February 24, 2018, from https://www.lifewire.com/hypertext-transfer-protocol-817944
+						</p>
+					</li>
+					<li>
+						<p>
+							Identifying resources on the Web. (n.d.). Retrieved February 24, 2018, from https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Identifying_resources_on_the_Web
+						</p>
+					</li>
+					<li>
+						<p>
+							Shannon, R. (n.d.). HTML Source : HTML Tutorials. Retrieved February 24, 2018, from http://www.yourhtmlsource.com/starthere/historyofhtml.html     
+						</p>
+					</li>
+					<li>
+						<p>
+							CSS How To... (n.d.). Retrieved April 08, 2018, from https://www.w3schools.com/css/css_howto.asp
+						</p>
+					</li>
+					<li>
+						<p>
+							(n.d.). Retrieved April 08, 2018, from https://www.quackit.com/css/external_style_sheets.cfm
+						</p>
+					</li>
+					<li>
+						<p>
+							Markle, B. (n.d.). Using External, Internal CSS Stylesheets and Inline Styles. Retrieved April 08, 2018, from https://www.inmotionhosting.com/support/edu/website-design/using-css/linking-your-css-to-your-website
+						</p>
+					</li>
+					<li>
+						<p>
+							Syntax. (n.d.). Retrieved April 08, 2018, from https://developer.mozilla.org/en-US/docs/Web/CSS/Syntax
+						</p>
+					</li>
+					<li>
+						<p>
+							A Brief History of CSS. (n.d.). Retrieved April 08, 2018, from http://www.css-class.com/a-brief-history-of-css/
+						</p>
+					</li>
+					<li>
+						<p>
+							A Short History of CSS. (n.d.). Retrieved April 08, 2018, from http://eecs.vanderbilt.edu/courses/es101-02/Class Materials/Gill Murreys CSS Lecture/screen6.html
+						</p>
+					</li>
+					<li>
+						<p>
+							Aston, B. (2015, April 01). A brief history of JavaScript – Ben Aston – Medium. Retrieved April 08, 2018, from https://medium.com/@benastontweet/lesson-1a-the-history-of-javascript-8c1ce3bffb17
+						</p>
+					</li>
+					<li>
+						<p>
+							JavaScript basics. (n.d.). Retrieved Thursday 5, 2018, from https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics
+						</p>
+					</li>
+					<li>
+						<p>(n.d.). Retrieved April 08, 2018, from https://www.w3.org/TR/WD-DOM/introduction.html
+						</p>
+					</li>
+					<li>
+						<p>						http://web.cs.wpi.edu/~kal/courses/awt/lab1/wwwch5.PDF
+						</p>
+					</li>
+				</ol>
+			</div>
+		<footer class="foot">
+			<p> ©2018 Web Systems and Technologies. All Rights reserved. </p>
+	    </footer>
+</body>
+</html>
