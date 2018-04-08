@@ -1,15 +1,28 @@
+div.container{
+	background-color: #F0F3F4;
+	width: auto;
+	height: auto;
+	margin-right: 10%;
+	margin-left: 10%;  
+	box-shadow: 5px 10px 13px #888888;
+}
+
+img#logo{
+	height: 80px;
+	width: 100px;
+	float: left;
+}
 
 body {	
 	font-family: sans-serif;
 	font-size: 18px;
-	color: white;
-	background: url(simage/bg.png) repeat;	
 }
+
 footer{
 	font-family:"Courier New";
-	color:white;
 	text-align:center;
-	border-top: 1px solid;  
+	border-top: 1px solid; 
+	margin-top: 15px; 
 }
 
 	.navbar {
@@ -20,31 +33,31 @@ footer{
 
 	.navbar a {
 		float: left;
-		font-size: 16px;
+		font-size: 20px;
 		color: white;
 		text-align: center;
 		padding: 14px 16px;
 		text-decoration: none;
 	}
 
+	.navbar .navi-button{
+		margin-top: 20px;
+	}
+
 	.dropdown {
 		float: left;
 		overflow: hidden;
+		margin-top: 20px;
 	}
 
 	.dropdown .dropbtn {
-		font-size: 16px;    
+		font-size: 20px;		    
 		border: none;
 		outline: none;
 		color: white;
 		padding: 14px 16px;
 		background-color: inherit;
 		font-family: inherit;
-		margin: 0;
-	}
-
-	.navbar a:hover, .dropdown:hover .dropbtn {
-		background-color: red;
 	}
 
 	.dropdown-content {
@@ -108,10 +121,13 @@ h2#ref{
 	border-top: 1px solid;
 	padding-top: 30px;
 }
+
 div.reference{
+	background-color: #F0F3F4;
 	columns: 30em;
 	list-style-type: decimal;
-	text-align: left;	
+	text-align: left;
+	box-shadow: 5px 10px 13px #888888;	
 }
 /**About US**/
 

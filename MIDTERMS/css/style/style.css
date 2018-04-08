@@ -4,6 +4,8 @@ div.container{
 	height: auto;
 	margin-right: 10%;
 	margin-left: 10%;  
+	margin-top: 100px;
+
 }
 
 img#logo{
@@ -15,6 +17,9 @@ img#logo{
 nav.navbar{
 	overflow: hidden;
 	background-color: #333;
+	width: 100%;
+	position: fixed;
+	top: 0;
 }
 
 nav.navbar a{
@@ -44,7 +49,7 @@ nav.navbar a{
 	margin: 0;
 }
 
-.navbar a:hover, .dropdown:hover .dropbtn {
+.navbar a:hover .dropdown:hover .dropbtn {
 	background-color: red;
 }
 
