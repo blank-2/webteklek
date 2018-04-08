@@ -1,8 +1,7 @@
 //MIDTERMS
 History of Cascading Style Sheet (CSS)
   
-  In the early days of the Web, designers complained that they didn't have enough control over how their pages looked. They wanted to 
-change fonts and colors, and the alignment of text. For years after Sir Tim Berners-Lee first created the World Wide Web in 1989, there was no such thing as CSS. Cascading Style Sheets (CSS) was created to help designers separate style from structure of an HTML document. CSS adds the style and design to a web page. The term cascading comes from the ability to combine multiple CSS files to determine the style for one page.
+  In the early days of the Web, designers complained that they didn't have enough control over how their pages looked. They wanted to change fonts and colors, and the alignment of text. For years after Sir Tim Berners-Lee first created the World Wide Web in 1989, there was no such thing as CSS. Cascading Style Sheets (CSS) was created to help designers separate style from structure of an HTML document. CSS adds the style and design to a web page. The term cascading comes from the ability to combine multiple CSS files to determine the style for one page.
 
   In 1992, Pei Wei developed a browser called Viola, which had its own style sheet language. In January 23, 1993, NCSA Mosaic was released, making the web more popular than ever, but it only offered limited capability to change fonts and colors. In October 1994, Hakon Wium Lie released the first draft of “Cascading HTML Style Sheets”. In May 1995, the discussion on www-style mailing list was created and influenced the development of CSS and later HTML was removed from the name. In August 1996, Microsoft Internet Explorer became the first browser to support CSS. Netscape followed suit in supporting CSS, but also implemented an alternative Javascript Style Sheets.
 
@@ -191,3 +190,12 @@ CSS Statements
       https://developer.mozilla.org/en-US/docs/Web/CSS/Syntax
       http://www.css-class.com/a-brief-history-of-css/
       http://eecs.vanderbilt.edu/courses/es101-02/Class%20Materials/Gill%20Murrey's%20CSS%20Lecture/screen6.html
+
+
+      APA Format:
+      CSS How To... (n.d.). Retrieved April 08, 2018, from https://www.w3schools.com/css/css_howto.asp
+      (n.d.). Retrieved April 08, 2018, from https://www.quackit.com/css/external_style_sheets.cfm
+      Markle, B. (n.d.). Using External, Internal CSS Stylesheets and Inline Styles. Retrieved April 08, 2018, from https://www.inmotionhosting.com/support/edu/website-design/using-css/linking-your-css-to-your-website
+      Syntax. (n.d.). Retrieved April 08, 2018, from https://developer.mozilla.org/en-US/docs/Web/CSS/Syntax
+      A Brief History of CSS. (n.d.). Retrieved April 08, 2018, from http://www.css-class.com/a-brief-history-of-css/
+      A Short History of CSS. (n.d.). Retrieved April 08, 2018, from http://eecs.vanderbilt.edu/courses/es101-02/Class Materials/Gill Murreys CSS Lecture/screen6.html
