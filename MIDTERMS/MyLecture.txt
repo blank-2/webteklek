@@ -1,0 +1,74 @@
+JAVASCRIPT
+	
+	JAVASCRIPT Execution Environment
+
+		-Core JavaScript(EcmaScript) Language and API
+		-(Traditional) Browser Object Model(BOM) API (non-standardized)
+			-window,navigationscreen,location history
+		-Keywords:
+			-Defer - The execution of script is deffered. Not executed instantly
+			-Async - It executes the code in parellel.
+	
+	Javascript can be embedded or link
+	
+		-Embedded
+		
+			<script type="text/javascript">
+				<!-- hide script from non-JavaScript browsers ..
+				/* script code here */
+				// end of script .. -->
+			</script>
+
+		-Link
+		
+			 <script type="text/javascript" src="scripts.js"/></script>
+	
+
+	Basic Language Features
+		
+		-Paradigm
+			-Object-oriented (prototype-based)
+			-Functional
+			-Imperative Scripting Language
+
+		-Java/C like Syntax
+			-Implicit semicolon insertion for statement termination
+			-Identifiers are alphanumeric, _, and $ characters
+			-Single-line (//) or block (/**/) comments
+
+		-Type system and variable scoping rules
+			-Dynamic (aka loose or weak) typing
+			-Global (aka top-level) or local scopes
+			-Data types:
+				Primitive types
+					Numbers (decimal, hexadecimal notation)
+					Booleans (true, false)
+					Strings (Single or Double quote delimited)
+					Undefined and Null
+				Composite(object)types
+					Core Javascript Object
+					Object, Number, Boolean, String, Date, Math, Global, RegExp, Error
+					Arrays
+		
+	Event Propagation Order (DOM compliant browsers)
+		
+		-Capturing phase
+		-At target
+		-Bubbling phase
+	
+	=======================================================
+	/*** Creating and Dispatching Events... ***/
+	
+	var clickEvent = new Event('click');
+	var buttin = document querySelector('#button');
+	button.dispatchEvent(clickEvent);
+	
+	var ce = new CustomEvent('pindot');
+	button.addEventListener('pindot', pindotHandler);
+	button.dispatchEvent(ce);
+	=======================================================
+			
+			
+	
+	
+	JavaScript basics. (n.d.). Retrieved Thursday 5, 2018, from https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics
