@@ -177,25 +177,133 @@ CSS Statements
   
   
   ----------------------JAVASCRIPT-------------------------------
-        
- 
+  Brief History of JavaScript
+  
+    JavaScript sometimes called as "JS" is an object-oriented programming language and web based programming language that powers the behavior of a website. In 1995, JavaScript was created by Brendan Eich during his time at Netscape communications and javascript later became an ECMA standard in 1997. 
+    
+    JavaScript Execution Environment
+    -Core JavaScript(EcmaScript) Language and API
+		-(Traditional) Browser Object Model(BOM) API (non-standardized)
+		    	-window,navigationscreen,location history
+		-Keywords:
+			-Defer - The execution of script is deffered. Not executed instantly
+			-Async - It executes the code in parellel.
       
+    Javascript can be embedded or link
+	
+		-Embedded
+			<script type="text/javascript">
+				<!-- hide script from non-JavaScript browsers ..
+				/* script code here */
+				// end of script .. -->
+			</script>
+
+		-Link
+			 <script type="text/javascript" src="scripts.js"/></script>
+    
+    Document Object Model (DOM)
+    - an abstract model that defines the interface between HTML documents and application programs
+    - represents the object and the entire structure of the object is embodied in a tree like structure.
+    - DOM is a programming API that allows access for HTML and XML documents.
+    
+    Functionalitites:
+    - getElementId()
+    Example:
+      <form action = "">
+        <input type = "button" id = "pushMe">
+      </form>
+
+      document.getElementById("pushMe")
       
+    - getElementsByTagName(), getElementsByClassname(), getElementsByName()
+    - querySelector(), querySelectorAll()
+    
+    Basic Language Features
+		-Paradigm
+			-Object-oriented (prototype-based)
+			-Functional
+			-Imperative Scripting Language
+
+		-Java/C like Syntax
+			-Implicit semicolon insertion for statement termination
+			-Identifiers are alphanumeric, _, and $ characters
+			-Single-line (//) or block (/**/) comments
+
+		-Type system and variable scoping rules
+			-Dynamic (aka loose or weak) typing
+			-Global (aka top-level) or local scopes
+			-Data types:
+				Primitive types
+					Numbers (decimal, hexadecimal notation)
+					Booleans (true, false)
+					Strings (Single or Double quote delimited)
+					Undefined and Null
+				Composite(object)types
+					Core Javascript Object
+					Object, Number, Boolean, String, Date, Math, Global, RegExp, Error
+					Arrays
+     
+     JavaScript Event Handling
+     - An event is a notification that something specific has occurred, either with the browser or an action of the browser user.
+     - An event handler is a script that is implicitly executed in response to the appearance of an event.
+     
+     Event Propagation Order (DOM compliant browsers)
+      -Capture phase: propagate or capture inwards
+      -At Targer
+      -Bubbling phase: propagate or capture outwards
+                       implementation use by Microsoft
+                      
+     JavaScript HTML DOM Events
+
+     Examples of HTML events:
+      -When a user clicks the mouse
+      -When a web page has loaded
+      -When an image has been loaded
+      -When the mouse moves over an element
+      -When an input field is changed
+      -When an HTML form is submitted
+      -When a user strokes a key
       
-      
+     Events:                    Event Tag Attribute:
+     abort                      onAbort
+     blur                       onBlur
+     change                     onChange
+     click                      onClick
+     error                      onError
+     focus                      onFocus
+     load                       onLoad
+     mouseout                   onMouseOut
+     mouseover                  onMouseOver
+     reset                      onReset
+     resize                     onResize
+     select                     onSelect
+     submit                     onSubmit
+     unload                     onUnload
+     
+  Creating and Dispatching Event
+     
+	var clickEvent = new Event('click');
+	var buttin = document querySelector('#button');
+	button.dispatchEvent(clickEvent);
+	
+	var ce = new CustomEvent('pindot');
+	button.addEventListener('pindot', pindotHandler);
+	button.dispatchEvent(ce);
+
+
       REFERENCES:
-      https://www.w3schools.com/css/css_howto.asp
-      https://www.quackit.com/css/external_style_sheets.cfm
-      https://www.inmotionhosting.com/support/edu/website-design/using-css/linking-your-css-to-your-website
-      https://developer.mozilla.org/en-US/docs/Web/CSS/Syntax
-      http://www.css-class.com/a-brief-history-of-css/
-      http://eecs.vanderbilt.edu/courses/es101-02/Class%20Materials/Gill%20Murrey's%20CSS%20Lecture/screen6.html
-
-
-      APA Format:
+     
       CSS How To... (n.d.). Retrieved April 08, 2018, from https://www.w3schools.com/css/css_howto.asp
       (n.d.). Retrieved April 08, 2018, from https://www.quackit.com/css/external_style_sheets.cfm
-      Markle, B. (n.d.). Using External, Internal CSS Stylesheets and Inline Styles. Retrieved April 08, 2018, from https://www.inmotionhosting.com/support/edu/website-design/using-css/linking-your-css-to-your-website
+      Markle, B. (n.d.). Using External, Internal CSS Stylesheets and Inline Styles. Retrieved April 08, 2018, from 
+      https://www.inmotionhosting.com/support/edu/website-design/using-css/linking-your-css-to-your-website
       Syntax. (n.d.). Retrieved April 08, 2018, from https://developer.mozilla.org/en-US/docs/Web/CSS/Syntax
       A Brief History of CSS. (n.d.). Retrieved April 08, 2018, from http://www.css-class.com/a-brief-history-of-css/
-      A Short History of CSS. (n.d.). Retrieved April 08, 2018, from http://eecs.vanderbilt.edu/courses/es101-02/Class Materials/Gill Murreys CSS Lecture/screen6.html
+      A Short History of CSS. (n.d.). Retrieved April 08, 2018, from http://eecs.vanderbilt.edu/courses/es101-02/Class Materials/Gill 
+      Murreys CSS Lecture/screen6.html
+      Aston, B. (2015, April 01). A brief history of JavaScript – Ben Aston – Medium. Retrieved April 08, 2018, from 
+      https://medium.com/@benastontweet/lesson-1a-the-history-of-javascript-8c1ce3bffb17
+      JavaScript basics. (n.d.). Retrieved Thursday 5, 2018, from https://developer.mozilla.org/en-   
+      US/docs/Learn/Getting_started_with_the_web/JavaScript_basics
+      (n.d.). Retrieved April 08, 2018, from https://www.w3.org/TR/WD-DOM/introduction.html
+      http://web.cs.wpi.edu/~kal/courses/awt/lab1/wwwch5.PDF
