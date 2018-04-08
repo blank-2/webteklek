@@ -133,27 +133,49 @@ div.reference{
 
 #sec1a {
 	text-align: center;
+	font-size:1.5em;
 }
 
 #team{
-	margin-top:80px;
+	margin-top:50px;
 	margin-bottom:50px;
-	font-size:3em;
-	font-family:theboldfont_0;
+	font-size:50px;
 	text-align: center;
 }
 .aboutUsPicture {
 	width :  10%;
 	height : 10%;
 }
+
 #auth1{
 	overflow:hidden;
 	width:90%;
 	margin-left:70px;
-	text-align:center;
+	text-align:left;
+	margin-bottom: 20px;
+		
 }
 
-#auth1 img:hover{
+#geoA,#cjA,#jusA{
+    background-color: rgb(154, 182, 186);
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 80px;
+    padding-left: 80px;
+	border-radius: 50px 20px;
+}
+
+#jacqA{
+	background-color: rgb(154, 182, 186);
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 55px;
+    padding-left: 80px;
+	border-radius: 50px 20px;
+	
+}
+
+#auth1 img:hover{  
     margin: 0px;
     border-radius: 100%;
     -webkit-filter: none;
@@ -163,18 +185,19 @@ div.reference{
 
 #a1{
 	float :left;
-	margin: 0px;
+    margin: 0px;
     border-radius: 100%;
-    -webkit-filter: (100%);
-    filter:blur(3px);
     transition: 0.5s;
+	height: 280px;
+	width: 280px;
 }
 
 #auth2{
 	overflow:hidden;
 	width:90%;
 	margin-left:70px;
-	text-align:center;
+	text-align:left;
+	margin-bottom: 20px;
 }
 
 #auth2 img:hover{  
@@ -186,19 +209,20 @@ div.reference{
 }
 
 #a2{
-	float :right;
+    float:left;
     margin: 0px;
     border-radius: 100%;
-    -webkit-filter: (100%);
-    filter:blur(3px);
     transition: 0.5s;
+	height: 280px;
+	width: 280px;
 }
 
 #auth3{
 	overflow:hidden;
 	width:90%;
 	margin-left:70px;
-	text-align:center;
+	text-align:left;
+	margin-bottom: 20px;
 }
 
 #auth3 img:hover{  
@@ -213,16 +237,17 @@ div.reference{
     float:left;
     margin: 0px;
     border-radius: 100%;
-    -webkit-filter: (100%);
-    filter:blur(3px);
     transition: 0.5s;
+	height: 280px;
+	width: 280px;
 }
 
 #auth4{
 	overflow:hidden;
 	width:90%;
 	margin-left:70px;
-	text-align:center;
+	text-align:left;
+	margin-bottom: 20px;
 }
 
 #auth4 img:hover{  
@@ -234,34 +259,10 @@ div.reference{
 }
 
 #a4{
-    float:right;
+	float: left;
     margin: 0px;
     border-radius: 100%;
-    -webkit-filter: (100%);
-    filter:blur(3px);
     transition: 0.5s;
-}
-
-#auth5{
-	overflow:hidden;
-	width:90%;
-	margin-left:70px;
-	text-align:center;
-}
-
-#auth5 img:hover{  
-    margin: 0px;
-    border-radius: 100%;
-    -webkit-filter: none;
-    filter: none;
-    box-shadow: 0px 2px 15px #202020;
-}
-
-#a5{
-    float:left;
-    margin: 0px;
-    border-radius: 100%;
-    -webkit-filter: (100%);
-    filter:blur(3px);
-    transition: 0.5s;
+	height: 280px;
+	width: 280px;
 }
