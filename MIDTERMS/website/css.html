@@ -19,6 +19,7 @@
 		  			<a href="http.html">Hypertext Transfer Protocol (HTTP)</a>
 		  			<a href="html.html">Hypertext Markup Language (HTML)</a>
 		  			<a href="css.html">Cascading Style Sheet (CSS)</a>
+		  			<a href="javascript.html">JavaScript</a>
 				</div>
 	  		</div> 
 	  		<a href="aboutUs.html" class="navi-button">About Us</a>
@@ -59,11 +60,274 @@
 				</li>
 			</ul>
 		</section>
+		<h1>HTML StyleSheets</h1>
 		<section id="p4">
-			<p>In October of 1990, Sir Tim Berners-Lee invented the 3 corner stone fundamental technologies that remain the foundation of today’s web</p>
-			<p>  - HTML: HyperText Markup Language. The markup (formatting) language for the web.</p>
-			<p>  - URI: Uniform Resource Identifier. A kind of “address” that is unique and used to identify to each resource on the web. It is also commonly called a URL.</p>
-			<p>  - HTTP: Hypertext Transfer Protocol. Allows for the retrieval of linked resources from across the web.</p> 
+			<p>The sources of styles for HTML documents</p>
+			<ul>
+				<li><b>Author Styles</b>
+					<ul>
+						<li>external (a.k.a linked) stylesheets
+							<ul>
+								<li><p>An external style sheet is a separate file where you can declare all the styles that you want to use on your website. You then link to the external style sheet from all your HTML pages.</p>
+								</li>
+							</ul>
+						</li>
+						<li>embedded (a.k.a internal) stylesheets
+							<ul>
+								<li>
+									<p>
+										An internal stylesheet holds the CSS code for the webpage in the head section of the particular file. This makes it easy to             apply styles like classes or id's in order to reuse the code. The downside of using an internal stylesheet is that changes to the internal stylesheet only effect the page the code is inserted into
+									</p>
+								</li>
+							</ul>
+						</li>
+						<li>Inline Styles
+							<ul>
+								<li>
+									The Inline style is specific to the tag itself. The inline style uses the HTML "style" attribute to style a specific tag. This           is not recommended, as every CSS change has to be made in every tag that has the inline style applied to it. The Inline style is good for one an individual CSS change that you do not use repeatedly through the site.
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li>User Styles
+					<ul>
+						<li>
+							<p>
+							Some browsers provide (non-standard) alternatives through plug-ins/ Etensions like Stylish.
+							</p>
+						</li>
+					</ul>
+				</li>
+				<li>User Agent Styles
+					<ul>
+						<li>
+							Sample default user agent sheet from css 2.1
+						</li>
+						<li>
+							The source of a style denotes its origin, which is used in determining its precedence in the cascade.
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</section>
+		<h1>CSS Statements</h1>
+		<section>
+			<p>at rules (@rules)</p>
+			<p>It is a CSS statement beginning with an at sign, '@' (U+0040 COMMERCIAL AT), then followed by an identifier and includes everything up to the next semi-colon, ';' (U+003B SEMICOLON), or the next CSS block, whichever comes first.</p>
+			<h5>Several at rules :</h5>
+				<ul>
+					<li>
+						@charset — Defines the character set used by the style sheet.
+					</li>
+					<li>
+						@import — Tells the CSS engine to include an external style sheet.
+					</li>
+					<li>
+						@namespace — Tells the CSS engine that all its content must be considered prefixed with an XML namespace.
+					</li>
+					<li>
+						Nested at-rules — A subset of nested statements, which can be used as a statement of a style sheet as well as inside of conditional group rules:
+						<ul>
+							<li>
+								@media — A conditional group rule that will apply its content if the device meets the criteria of the condition defined using a media query.
+							</li>
+							<li>
+								@font-face — Describes the aspect of an external font to be downloaded.
+							</li>
+							<li>
+								@keyframes — Describes the aspect of intermediate steps in a CSS animation sequence.
+							</li>
+						</ul>
+					</li>
+				</ul>
+			<p>css rules sets (CSS Rules, Style rules)
+				<ul>
+					<li><p>Css allows applying different declarations to different parts of the document by associating conditions with declarations blocks.</p></li>
+					<li>
+						<p>
+							It consists of a selector, brace, enlcosed declaration box which contains zero or more semi-colo(;) separated property declaration
+						</p>
+					</li>
+				</ul>
+			</p>
+		</section>
+		<h1>CSS Selectors</h1>
+		<section>
+			<h3>Selector Syntax</h3>
+			<p>Chain of one or more sequences of simple separators separated by combinators with one pseudo-element possibly appended to the last sequence.</p>
+
+			<h5>Simple Selectors</h5>
+			<ul>
+				<li>UNIVERSAL SELECTORS</li>
+				<li>TYPE SELECTORS</li>
+				<li>ID SELECTORS</li>
+				<li>CLASS SELECTORS</li>
+				<li>ATTRIBUTE SELECTORS</li>
+				<li>PSEUDO SELECTORS</li>
+			</ul>
+
+			<h5>Combinators</h5>
+			<ul>
+				<li>descendant combinator eg.()</li>
+				<li>child combinator(>)</li>
+				<li>sibling combinators
+					<ul>
+						<li>adjacent sibling combinator(+)</li>
+						<li>general sibling combinator(~)</li>
+					</ul>
+				</li>
+			</ul>
+
+			<p>Pseudo classes - characteristics associated with content due to an action done on the content.</p>
+
+			<ul>
+				<li>Dynamic Pseudo classes
+					<ul>
+						<li>link psedudo-classes
+							<ul>
+								<li>:link,:visited</li>
+							</ul>
+						</li>
+						<li>user action-classes
+							<ul>
+								<li>:hover,:active,:focus</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li>Target Pseudo-class
+					<ul>
+						<li>:target</li>
+					</ul>
+				</li>
+				<li>Language Pseudo-class
+					<ul>
+						<li>:lang()</li>
+					</ul>
+				</li>
+				<li>UI Element states
+					<ul>
+						<li>:enabled,:disabled,:checked,:intermediate</li>
+					</ul>
+				</li>
+				<li>Structural states
+					<ul>
+						<li>:root,:first-child,:last-child,:only-child</li>
+						<li>:nth-child,:nth-last-child()</li>
+						<li>:first-of-type,:last-of-type,:only-of-type,:nth-of-type</li>
+					</ul>
+				</li>
+			</ul>
+
+			<p>Selector Group - comma separated list of selectors representing the union of all elements selected by each of the selectors in the list.</p>
+
+			<h5>CSS Rule Precedence</h5>
+			<ul>
+				<li>
+					<p>HTML element may be the subject of the selectors of multiple styles roles.</p>
+				</li>
+				<li>
+					<p>When such rules target different properties, their effects cascade are combined.</p>
+				</li>
+				<li>
+					<p>
+						When the styles involve the same priority, they conflict and must be resolved such that the only one style is applied.
+					</p>
+				</li>
+				<li>Resolution: 
+					<ul>
+						<li>by origin and importance</li>
+						<li>by specifity</li>
+						<li>by order</li>
+					</ul>
+				</li>
+			</ul>
+		</section>
+		<h1>Origin and Importance</h1>
+		<section>
+			<p>The origin of a declaration is based on where it comes from and it's importance is whether or not it is declared "important".</p>
+			<p>The precedence of the various origin is in DESCENDING order.</p>
+			<ol>
+				<li>Transition Declarations</li>
+				<li>Important user agent declarations</li>
+				<li>Important user declarations</li>
+				<li>Important override decalarations</li>
+				<li>Important author declarations</li>
+				<li>Animation Declarations</li>
+				<li>Normal Override Declarations</li>
+				<li>Normal Author declarations</li>
+				<li>Normal User Decalrations</li>
+				<li>Normal User Agent Declarations</li>
+			</ol>
+
+			<h5>Properties</h5>
+			<ul>
+				<li>Shorthand Properties
+					<ul>
+						<li>
+							allows authors to specify the values of several properties with a single properties.
+							eg. background,font,margin,padding,border etc.
+						</li>
+					</ul>
+				</li>
+				<li>vendor specific extensions (a.k.a vendor prefixes)
+					<ul>
+						<li>
+							used by browser vendors as a prefix for the names of experimental/non-standard CSS properties: lately, verndors are moving away from vendor prefixes in favor of user-controlled flags or preferences.
+            				eg. -webkit-, -moz-, -o-, -ms-, etc.
+						</li>
+					</ul>
+				</li>
+				<li>Custom properties (a.k.a CSS variables or Experimental)
+					<ul>
+						<li>
+							property names prefixed list --, representing a value that can be accessed throughout the document using the var() function.
+						</li>
+					</ul>
+				</li>
+				<li>Values
+					<ul>
+						<li>Value representing
+							<ul>
+								<li>declared,cascaded,specified,computed,used,actual values</li>
+							</ul>
+						</li>
+						<li>Value types</li>
+						<li>length units
+							<ul>
+								<li>eg. font-relative</li>
+							</ul>
+						</li>
+						<li>angle units</li>
+						<li>duration</li>
+						<li>frequent units</li>
+					</ul>
+				</li>
+			</ul>
+
+			<p>The final value of CSS property for a given element /box is the result of a multi-step calculation.</p>
+
+			<h5>CSS Preprocessors and Frameworks</h5>
+			<ul>
+				<li>CSS Preprocessors
+					<ul>
+						<li>generates CSS using a custom language, syntax that typically includes features that don't exist in pure CSS
+						for example variables, control flow, nesting, mixims, functions and others.
+						</li>
+					</ul>
+				</li>
+				<li>CSS Frameworks
+					<ul>
+						<li>
+							provides predefined CSS design functionality that can be viewed, extended or customized
+						</li>
+						<li>
+							Bootsrap,foundation,materalize
+						</li>
+					</ul>
+				</li>
+			</ul>
 		</section>
 	</div>
 	</div>
@@ -127,6 +391,24 @@
 					<li>
 						<p>
 							A Short History of CSS. (n.d.). Retrieved April 08, 2018, from http://eecs.vanderbilt.edu/courses/es101-02/Class Materials/Gill Murreys CSS Lecture/screen6.html
+						</p>
+					</li>
+					<li>
+						<p>
+							Aston, B. (2015, April 01). A brief history of JavaScript – Ben Aston – Medium. Retrieved April 08, 2018, from https://medium.com/@benastontweet/lesson-1a-the-history-of-javascript-8c1ce3bffb17
+						</p>
+					</li>
+					<li>
+						<p>
+							JavaScript basics. (n.d.). Retrieved Thursday 5, 2018, from https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics
+						</p>
+					</li>
+					<li>
+						<p>(n.d.). Retrieved April 08, 2018, from https://www.w3.org/TR/WD-DOM/introduction.html
+						</p>
+					</li>
+					<li>
+						<p>http://web.cs.wpi.edu/~kal/courses/awt/lab1/wwwch5.PDF
 						</p>
 					</li>
 				</ol>

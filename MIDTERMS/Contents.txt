@@ -18,10 +18,10 @@ HTML StyleSheets
       -external (a.k.a linked) stylesheets 
            An external style sheet is a separate file where you can declare all the styles that you want to use on your website. You                then link to the external style sheet from all your HTML pages.
       -embedded (a.k.a internal) stylesheets
-          An internal stylesheet holds the CSS code for the webpage in the head section of the particular file. This makes it easy to             apply styles like classes or id's in order to reuse the code. The downside of using an internal stylesheet is that changes to           the internal stylesheet only effect the page the code is inserted into
+          An internal stylesheet holds the CSS code for the webpage in the head section of the particular file. This makes it easy to             apply styles like classes or id's in order to reuse the code. The downside of using an internal stylesheet is that changes to the internal stylesheet only effect the page the code is inserted into
       
       -Inline Styles
-          The Inline style is specific to the tag itself. The inline style uses the HTML "style" attribute to style a specific tag. This           is not recommended, as every CSS change has to be made in every tag that has the inline style applied to it. The Inline style           is good for one an individual CSS change that you do not use repeatedly through the site.
+          The Inline style is specific to the tag itself. The inline style uses the HTML "style" attribute to style a specific tag. This           is not recommended, as every CSS change has to be made in every tag that has the inline style applied to it. The Inline style is good for one an individual CSS change that you do not use repeatedly through the site.
           
     > User Styles
       - Some browsers provide (non-standard) alternatives through plug-ins/ Etensions like Stylish.
@@ -250,8 +250,7 @@ CSS Statements
      Event Propagation Order (DOM compliant browsers)
       -Capture phase: propagate or capture inwards
       -At Targer
-      -Bubbling phase: propagate or capture outwards
-                       implementation use by Microsoft
+      -Bubbling phase: propagate or capture outwards                    implementation use by Microsoft
                       
      JavaScript HTML DOM Events
 
@@ -301,9 +300,8 @@ CSS Statements
       A Brief History of CSS. (n.d.). Retrieved April 08, 2018, from http://www.css-class.com/a-brief-history-of-css/
       A Short History of CSS. (n.d.). Retrieved April 08, 2018, from http://eecs.vanderbilt.edu/courses/es101-02/Class Materials/Gill 
       Murreys CSS Lecture/screen6.html
-      Aston, B. (2015, April 01). A brief history of JavaScript – Ben Aston – Medium. Retrieved April 08, 2018, from 
-      https://medium.com/@benastontweet/lesson-1a-the-history-of-javascript-8c1ce3bffb17
-      JavaScript basics. (n.d.). Retrieved Thursday 5, 2018, from https://developer.mozilla.org/en-   
-      US/docs/Learn/Getting_started_with_the_web/JavaScript_basics
+
+      Aston, B. (2015, April 01). A brief history of JavaScript – Ben Aston – Medium. Retrieved April 08, 2018, from https://medium.com/@benastontweet/lesson-1a-the-history-of-javascript-8c1ce3bffb17
+      JavaScript basics. (n.d.). Retrieved Thursday 5, 2018, from https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics
       (n.d.). Retrieved April 08, 2018, from https://www.w3.org/TR/WD-DOM/introduction.html
       http://web.cs.wpi.edu/~kal/courses/awt/lab1/wwwch5.PDF
