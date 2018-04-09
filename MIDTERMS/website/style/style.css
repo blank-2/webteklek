@@ -24,11 +24,19 @@ footer{
 	border-top: 1px solid; 
 	margin-top: 15px; 
 }
+p {
+    text-indent: 50px;
+    margin: 35px;
+}
+h1,h2,h3,h4,h5 {
+    margin: 35px;
+}
 
 	.navbar {
 		overflow: hidden;
 		background-color: #333;
 		font-family: Arial, Helvetica, sans-serif;
+        
 	}
 
 	.navbar a {
@@ -178,7 +186,6 @@ div.reference{
 #auth1 img:hover{  
     margin: 0px;
     border-radius: 100%;
-    -webkit-filter: none;
     filter: none;
     box-shadow: 0px 2px 15px #202020;
 }
@@ -203,7 +210,6 @@ div.reference{
 #auth2 img:hover{  
     margin: 0px;
     border-radius: 100%;
-    -webkit-filter: none;
     filter: none;
     box-shadow: 0px 2px 15px #202020;
 }
@@ -228,7 +234,6 @@ div.reference{
 #auth3 img:hover{  
     margin: 0px;
     border-radius: 100%;
-    -webkit-filter: none;
     filter: none;
     box-shadow: 0px 2px 15px #202020;
 }
@@ -253,7 +258,6 @@ div.reference{
 #auth4 img:hover{  
     margin: 0px;
     border-radius: 100%;
-    -webkit-filter: none;
     filter: none;
     box-shadow: 0px 2px 15px #202020;
 }
