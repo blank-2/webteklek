@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title> Web Systems and Technologies </title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header>
+    <h1> Web Systems and Technologies</h1>
+  </header>
+<nav id="main">
+    <ul>
+      <li class="logo"><a href="#">FINALS</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="servlets.html"> Server-Side Web Scripting</a></li>
+      <li><a href="about.html"> About Us</a></li>
+      <li><a href="sources.html"> Sources</a></li>
+      
+    </ul>
+</nav>
+
+  <div class="content">
+ 
+	<h2> Server-Side Web Scripting </h2>
+	<section id = "p1">
+		<p id="serv1><span style="margin-left: 4em">
+			<ul>	 
+				<b>JAVA Servlets</b>
+				<ul>
+					<li><p>Java objects that are intended to play the role of server components in client-server communications.</li></p>
+					<li><p>Handles client request by generating responses to such requests.</li></p>
+					<li><p>Part of the JAVA EE Specification. Click <a href="http://www.etc-graz.at/typo3/fileadmin/user_upload/ETC-Hauptseite/Menschenrechte_lernen/POOL/UDHR_Short_version.pdf">Java Servlet API</a> for additional notes.</li></p>
+					<li><p>Hosted in “servlet container that provides the environment in which the servlet runs, as well as controls the “Servlet Lifecycle".</li></p>
+				</ul>
+				
+				<b>Servlet Lifecycle</b>
+				<ul>
+					<ul><li><p>Four phases of Servlet Life Cycle:</ul></li></p>
+					<p><b>Servlet Class Loading</b>
+						- First phase the a request from the servlet will be received by the container when this happens, the class will be loaded into memory.</p>
+					<p><b>Servlet Class Initialization </b>
+						– Second phase is the transformation of the normal class into a servlet class and invoke's the init method for the ServletContext object to be intialized by the servlet container.</p>
+					<p><b>Request Handling</b>
+						– Third phase is the fully functioning website ready to handle client's requests. For every request of the client the service() method is called by initialiazing the request of the client.</p>
+					<p><b>Removal from Service</b>
+						– Fourth phase all running application will be stop and removing the loaded class from memory using the destroy() method.</p>
+					
+					<ul><li><p>Servlet Life Cycle consists of three methods:</ul></li></p>
+						<p><b>public void init(ServletConfig config)</b>
+						– This method is used by container to initialize the servlet, this method is invoked only once in the lifecycle of servlet.</p>
+						<p><b>public void service (ServletRequest request, ServletResponse response)</b>
+						– This method is called once for every request, container can’t invoke service() method until unless init() method is executed.</p>
+						<p><b>public void destroy()</b>
+						– This method is invoked once when servlet is unloaded from memory</p>
+				</ul>
+				
+				<b>HTTP Servlets</b>
+				<ul>
+					<li><p>Java service used to handle HTTP Requests and generate (DO GET, DO POST) HTTP responses.</li></p>
+					<li><p>Hosted in a web container which is a component in java “application server”. (Apache Tomcat, glass fish, wildfly, oracle web logic etc.)</li></p>
+					<li><p>The doXXX() methods:</li></p>
+				</ul>
+				<table>
+					<tr>
+						<th>HTTP Request</th>
+						<th>doXXX() method</th>
+						<th>Description</th>
+					</tr>
+					<tr>
+						<td>GET</td>
+						<td>doGet()</td>
+						<td>this is a servlet method that is invoke by the server when handling a get request and used to send limited and non-private data.</td>
+					</tr>
+					<tr>
+						<td>PUT</td>
+						<td>doPut()</td>
+						<td>this is a servlet method that is invoke by the server when the client handles FTP operations.</td>
+					</tr>
+					<tr>
+						<td>TRACE</td>
+						<td>doTrace()</td>
+						<td>this is a servlet method that is invoke by the server when the client wants to debug or trace the headers sent.</td>
+					</tr>
+					<tr>
+						<td>DELETE</td>
+						<td>doDelete()</td>
+						<td>this is a servlet method that is invoke by the server when the client wants to remove or delete a documentation or content or the whole web page from the server.</td>
+					</tr>
+					<tr>
+						<td>OPTIONS</td>
+						<td>doOptions()</td>
+						<td>this is a servlet method that is invoke by the server when any request are called by the client.</td>
+					</tr>
+					<tr>
+						<td>POST</td>
+						<td>doPost()</td>
+						<td>Called by server, via protected service() method to permit a servlet to handle a HTTP POST request.</td>
+					</tr>
+					<tr>
+						<td>HEAD</td>
+						<td>doHead()</td>
+						<td>Receives a HTTP HEAD request from the protected service() method and handles the request.</td>
+					</tr>
+				</table>
+				
+				<p><b>HTTP Servlet Response </b></p>
+				<ul>
+					<li><p>Message with a possibly payload.</li></p>
+					<li><p>Object representation of the HTTP response generated by the servlet.</li></p>
+					<li><p>HTTP representation of HTTP Response generated by the servlet and sent back to requesting client.</li></p>
+				</ul>
+				
+				<b>HTTP Servlet Request</b>
+				<ul>
+					<li><p>an interface and can extend the servlet request interface.</li></p>
+					<li><p>object of the HTTP servlet request is created by the servlet container and then passed to the service method (doGet(), doPost() etc) of the servlet.</li></p>
+				<ul>
+			</ul>
+			</p>
+  
+	</section>
+  </div>
+  
+  
+<script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
