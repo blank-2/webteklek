@@ -1,0 +1,28 @@
+HTTP Servlets
+Java service used to handle HTTP Requests and generate (DO GET, DO POST) HTTP responses.
+hosted in a web container which is a component in java “application server”. (Apache Tomcat, glass fish, wildfly, oracle web logic etc.)
+The doXXX() methods:
+
+HTTP Request    doXXX() method    Description
+GET
+doGet()
+this is a servlet method that is invoke by the server when handling a get request and used to send limited and non-private data.
+PUT
+doPut()
+this is a servlet method that is invoke by the server when the client handles FTP operations
+TRACE
+doTrace()
+this is a servlet method that is invoke by the server when the client wants to debug or trace the headers sent.
+DELETE
+doDelete()
+this is a servlet method that is invoke by the server when the client wants to remove or delete a documentation or content or the whole web page from the server.
+OPTIONS
+doOptions()
+this is a servlet method that is invoke by the server when any request are called by the client.
+POST
+doPost()
+Called by server, via protected service() method to permit a servlet to handle a HTTP POST request.
+HEAD
+doHead()
+Receives a HTTP HEAD request from the protected service() method and handles the request.
+
