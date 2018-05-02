@@ -27,6 +27,29 @@ public void service (ServletRequest request, ServletResponse response) 		– Thi
 						
 public void destroy() – This method is invoked once when servlet is unloaded from memory
 
+The init() Method
+Sample code:
+
+public void init() throws ServletException {
+    // load properties from disk, do be used by subsequent doGet() calls
+   // Initialization code...
+}
+
+The service() Method
+Sample code:
+
+public void service(ServletRequest request, ServletResponse response) 
+   throws ServletException, IOException {
+}
+
+The destroy() Method
+
+Sample code:
+
+public void destroy() {
+   // Finalization code...
+}
+
 HTTP Servlets
 Java service used to handle HTTP Requests and generate (DO GET, DO POST) HTTP responses.
 hosted in a web container which is a component in java “application server”. (Apache Tomcat, glass fish, wildfly, oracle web logic etc.)
