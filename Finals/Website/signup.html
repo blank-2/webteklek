@@ -9,14 +9,14 @@
 body{
     margin: 0;
     padding: 0;
-    background: url(images/bg1.jpg);
+    background: url(images/bg2.jpg);
     background-size: cover;
     background-position: center;
     font-family: sans-serif;
 }
 .login-box{
     width: 50%;
-    height: 420px;
+    height: 500px;
     background: rgba(0, 0, 0, 0.5);
     color: #fff;
     top: 50%;
@@ -90,24 +90,39 @@ h1{
 .cancelbtn {
   padding: 14px 20px;
   background-color: #f44336;
+
 }
 
 .signupbtn {
   padding: 14px 20px;
-  background-color: green;
+  background-color: #4F91FF;
 }
 
 
-.cancelbtn, .signupbtn {
+<!-- .cancelbtn, .signupbtn { 
   float: left;
   width: 50%;
-}
+}-->
 
-@media screen and (max-width: 300px) {
+<!-- @media screen and (max-width: 300px) { 
   .cancelbtn, .signupbtn {
     width: 100%;
   }
-}
+}-->
+
+.cancelbtn, .signupbtn{
+   opacity: 1;
+   transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+   }
+
+   .cancelbtn:hover {
+      opacity: 0.5;
+      }
+	.signupbtn:hover {
+      opacity: 0.5;
+      }
 
 
 </style>
@@ -116,6 +131,8 @@ h1{
     <img src="images/user.png" class="avatar">
         <h1>Sign up Here</h1>
             <form>
+			<p>Name</p>
+            <input type="text" name="name" placeholder="Enter Name">
             <p>Username</p>
             <input type="text" name="username" placeholder="Enter Username">
             <label for="psw"><b>Password</b></label>
@@ -124,8 +141,9 @@ h1{
 			<input type="password" placeholder="Repeat Password" name="psw-repeat" required>   
 
  <div class="clearfix">
-      <button type="button" class="cancelbtn">Cancel</button>
-      <button type="submit" class="signupbtn">Sign Up</button>
+		<button type="submit" class="signupbtn">Sign Up</button>
+		<button type="button" class="cancelbtn">Cancel</button>
+      
 	<!-- <input type="submit" name="submit" value="Login"> -->
 
     </div>
