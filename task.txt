@@ -1,4 +1,0 @@
-1. Contents for the website.
-2. HTML file
-3. CSS
-4. Images (Optional)
