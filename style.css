@@ -1,0 +1,500 @@
+body{
+	margin: 0;
+	font-family: Anton,Arial, Helvetica, sans-seif;
+	background: #333;
+	color: #fff;
+	font-size: 1.1em;
+	line-height: 1.5;
+	text-align: center;
+}
+
+img{
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+h1, h2, h3{
+	margin: 0;
+	padding: 1em 0;
+}
+
+p{
+	margin:0;
+	padding: 1em 0;
+	
+}
+/*header showcase*/
+
+#showcase{
+	min-height: 450px;
+	color: #fff;
+	text-align: center;
+}
+
+#showcase .bg-image{
+	position: absolute;
+	background: #333 url(../img/webteklogo.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 450px;
+	z-index: -1;
+	opacity: 0.7;
+	
+}
+
+#showcase h1{
+	padding-top: 100px;
+	padding-bottom:0;
+	
+}
+
+#showcase .content-wrap, #section-a .content-wrap{
+	padding: 0 1.5em;
+	
+}
+
+/*SECTIONA*/
+#section-a{
+	background:#eaeaea;
+	color: #333;
+	padding: 10px 10px 10px 10px;
+	
+}
+
+/*SECTIONB*/
+#section-b{
+	padding:2em 1em 1em;
+}
+#section-b ul{
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+#section-b li{
+	margin-bottom: 1em;
+	background: #fff;
+	color: #333;
+}
+
+.card-content{
+	padding: 1.5 em;
+}
+
+/*nav*/
+
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background: #F0F0F0;
+  font-size: 15px;
+  color: #666;
+  font-family: 'Roboto', sans-serif;
+}
+.content {
+  height: 200px;
+}
+a { text-decoration: none; }
+
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+
+.cover-bg {
+  background: rgba(0,0,0,0.5);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+}
+ @media only screen and (max-width:1199px) {
+
+.container { width: 96%; }
+}
+
+
+/*BOXES*/
+
+/* Boxes */
+#boxes{
+  margin-top:0px;
+ 
+}
+
+#boxes .box{
+  float:left;
+  text-align: center;
+  width:30%;
+  padding:50px;
+
+}
+
+#boxes .box img{
+	width:50px;
+	margin: auto;
+    width: 60%;
+    padding: 1px;
+  
+}
+
+
+footer{
+  padding:20px;
+  margin-top:20px;
+  color:#ffffff;
+  background-color:#e8491d;
+  text-align: center;
+}
+
+/*slider*/
+.slider {
+  position: absolute;
+	background: #333 url(../img/webteklogo.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 450px;
+	z-index: -1;
+	opacity: 0.7;
+}
+.slide1,.slide2,.slide3,.slide4,.slide5 {
+  position: absolute;
+  width: 100%;
+  background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 450px;
+	z-index: -1;
+	opacity: 0.7;
+	
+}
+.slide1 {
+  background: url(../img/bg4.jpg)no-repeat center;
+      background-size: cover;
+    animation:fade 20s infinite;
+-webkit-animation:fade 20s infinite;
+
+} 
+.slide2 {
+  background: url(../img/bg2.jpg)no-repeat center;
+      background-size: cover;
+    animation:fade2 20s infinite;
+-webkit-animation:fade2 20s infinite;
+}
+.slide3 {
+    background: url(../img/bgweb.png)no-repeat center;
+      background-size: cover;
+    animation:fade3 20s infinite;
+-webkit-animation:fade3 20s infinite;
+}
+
+.slide4 {
+    background: url(../img/bg3.jpg)no-repeat center;
+      background-size: cover;
+    animation:fade4 20s infinite;
+-webkit-animation:fade4 20s infinite;
+}
+@keyframes fade
+{
+  0%   {opacity:1}
+  33.333% { opacity: 0}
+  66.666% { opacity: 0}
+  100% { opacity: 1}
+}
+@keyframes fade2
+{
+  0%   {opacity:0}
+  33.333% { opacity: 1}
+  66.666% { opacity: 0 }
+  100% { opacity: 0}
+}
+@keyframes fade3
+{
+  0%   {opacity:0}
+  33.333% { opacity: 0}
+  66.666% { opacity: 1}
+  100% { opacity: 0}
+}
+@keyframes fade4
+{
+  0%   {opacity:0}
+  33.333% { opacity: 0}
+  66.666% { opacity: 1}
+  100% { opacity: 0}
+}
+/*Navigation'*/
+.link-3 {
+  transition: 0.4s;
+  color: #ffffff;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 0 10px;
+  margin: 0 10px;
+  	font: normal 30px/normal "Anton", Helvetica, sans-serif;
+}
+.link-3:hover {
+  background-color: #ffffff;
+  color: #EEA200;
+  padding: 24px 10px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+.link-3 {
+  transition: 0.4s;
+  color: black;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 10px 10px;
+  margin: 10px 10px;
+    
+}
+.link-3:hover {
+  background-color:#336699;
+  color: white;
+  padding: 24px 10px;
+}
+
+
+nav {
+  margin-top: 0px;
+  padding: 15px;
+  text-align: center;
+  font-family: Raleway;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+  background-color:#d6d6d6;
+}
+
+/*div tables*/
+
+/*PARALLAX*/
+.pimg1, .pimg2, .pimg3{
+  position:relative;
+  opacity:0.70;
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+
+  /*
+    fixed = parallax
+    scroll = normal
+  */
+  background-attachment:fixed;
+}
+
+.pimg1{
+  background-image:url('../img/image1.jpg');
+  min-height:100%;
+}
+
+.pimg2{
+  background-image:url('../img/image2.jpg');
+  min-height:400px;
+}
+
+.pimg3{
+  background-image:url('../img/image3.jpg');
+  min-height:400px;
+}
+
+
+.section-light{
+  background-color:#f4f4f4;
+  color:#666;
+}
+
+.section-dark{
+  background-color:#282e34;
+  color:#ddd;
+}
+
+.ptext{
+  position:absolute;
+  top:50%;
+  width:100%;
+  text-align:center;
+  color:#000;
+  font-size:27px;
+  letter-spacing:8px;
+  text-transform:uppercase;
+}
+
+.ptext .border{
+  background-color:#111;
+  color:#fff;
+  padding:20px;
+}
+
+.ptext .border.trans{
+  background-color:transparent;
+}
+
+@media(max-width:568px){
+  .pimg1, .pimg2, .pimg3{
+    background-attachment:scroll;
+  }
+}
+
+/*CONTENT TITLE*/
+.content-title{
+display: block;
+-webkit-box-sizing: content-box;
+-moz-box-sizing: content-box;
+box-sizing: content-box;
+float: none;
+z-index: auto;
+width: auto;
+height: auto;
+position: static;
+cursor: default;
+opacity: 1;
+margin: 0 auto;
+padding: 0;
+overflow: visible;
+border: none;
+-webkit-border-radius: 0;
+border-radius: 0;
+font: normal 100px/normal "Anton", Helvetica, sans-serif;
+color: rgb(112, 112, 112);
+text-align: center;
+text-transform: uppercase;
+-o-text-overflow: clip;
+text-overflow: clip;
+letter-spacing: 10px;
+background: none;
+-webkit-box-shadow: none;
+box-shadow: none;
+text-shadow: 4px 4px 0 rgb(238,238,238) , 6px 6px 0 rgb(112,112,112) ;
+-webkit-transition: none;
+-moz-transition: none;
+-o-transition: none;
+transition: none;
+-webkit-transform: none;
+transform: none;
+-webkit-transform-origin: 50% 50% 0;
+transform-origin: 50% 50% 0;
+}
+
+.content-sub{
+	color: rgba(0,0,0,.6);
+	text-shadow: rgba(0,0,0,.2) 2px 6px 5px,rgba(255,255,255,.4) 0 -4px 30px;
+	font: normal 35px/normal "Anton", Helvetica, sans-serif;
+	position:right;
+}
+
+/*Table*/
+
+.divTable{
+	display: table;
+	width: 100%;
+}
+.divTableRow {
+	display: table-row;
+}
+.divTableHeading {
+	background-color: #EEE;
+	display: table-header-group;
+}
+.divTableCell, .divTableHead {
+	border: 1px solid #999999;
+	display: table-cell;
+	padding: 3px 10px;
+}
+.divTableHeading {
+	background-color: #EEE;
+	display: table-header-group;
+	font-weight: bold;
+}
+.divTableFoot {
+	background-color: #EEE;
+	display: table-footer-group;
+	font-weight: bold;
+}
+.divTableBody {
+	display: table-row-group;
+}
+
+
+.intro{
+	position:relative;
+}
+
+
+/* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 50%;
+	padding: 30px;
+    height: 300px; /* Should be removed. Only for demonstration */
+	display: block;
+	margin: 0 auto;
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+
+#servlet img{
+	width: 250px;
+	height: 250px;
+	margin: auto;
+    padding: 1px;
+}
+
+#php img{
+	width: 250px;
+	height: 250px;
+	margin: auto;
+    padding: 1px;
+}
+
+#node img{
+	width: 250px;
+	height: 250px;
+	margin: auto;
+    padding: 1px;
+}
+
+#owasp img{
+	width: 250px;
+	height: 250px;
+	margin: auto;
+    padding: 1px;
+}
+
