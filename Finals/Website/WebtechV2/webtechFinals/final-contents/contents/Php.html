@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title> Web Systems and Technologies </title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header>
+    <h1> Web Systems and Technologies</h1>
+  </header>
+<nav id="main">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="servlets.html"> Server-Side Web Scripting</a></li>
+	  <li><a href="Php.html">Hypertext Preprocessor</a></li>
+	  <li><a href="Nodejs.html">Node js</a></li>
+	  <li><a href="Owsp.html>">OWASP</a></li>
+    </ul>
+</nav>
+
+  <div class="content">
+ 
+	<h2> Server-Side Web Scripting </h2>
+	<section id = "p1">
+		<p id="serv1><span style="margin-left: 4em">
+			<ul>	 
+				<b>PHP: Hypertext Preprocessor</b>
+				<p> What is PHP?</p>
+				<ul>
+					<li><p>PHP stands for Hypertext Preprocessor. PHP is an open source scripting language and
+							the scripts are  executed on the server. PHP can add, delete and modify data in 
+							a database and can generate dynamic page content meaning that it contents can be change.</li></p>
+					<li><p>PHP files have the extension ".php" that can contain text, HTML, CSS, PHP code and
+					Javascript.</li></p>
+					
+				</ul>
+				
+				<h4>How to connect to the database using PHP</h4>
+				<p>This is an example of a MySqli Procedural</p>
+				
+				<code>
+				<pre>
+				&lt?php
+					$host = 'localhost'; 
+					$user = 'root';
+					$pass = '';
+					$dbname = 'quiz';
+	
+					$conn = mysqli_connect($host,$user,$pass,$dbname) or die('Cannot connect to the database');
+				?&gt
+				</pre>
+				</code><br>
+				
+				<li><p>The set of code which has the character dollar sign ($) is a used to create a variable that 
+						stores a string value that will be inserted into the mysqli_connect method.</li></p>
+				<li><p>This is an optional way to connect to the because the mysqli_connect method also accepts direct 
+						string values but for formality's sake it is better to create a variable to represent the value 
+						of the parameters this will also help the user determine the value of string it is.</li></p>
+				<li><p>The mysqli_connect is the method used in order to connect to the database that is hosted via the wamp server and mySQL. </li></p>
+				<li><p>The parameters of mysqli_connect has the following parameters first is the name of the host/server name, second is the username, 
+						third is the password then fourth is the database name this parameters are essential but the parameter’s from the first to the 
+						third are the basic requirement to connect to the database.</li></p>
+				<li><p>The die method is used if the connection to the data fails and the message inside the parameter of the die method will be shown.</li></p>
+				
+				<h4>How to create a registration form using PHP</h4>
+				
+				<code>
+				<pre>
+				&lt?php
+					include(‘server.php); 
+						if (isset($_POST['register'])) { 
+							$name = mysqli_real_escape_string($conn, $_POST['name']);
+							$userName = mysqli_real_escape_string($conn, $_POST['username']);
+							$password = mysqli_real_escape_string($conn, $_POST['password']);
+	
+						$sql = "INSERT INTO accounts (name, username, password)
+								VALUES ('$name', '$userName', '$password')";
+						mysqli_query($conn,$sql);
+						}
+				?&gt
+				</pre>
+				</code><br>
+
+				<li><p>For the first line of code include(‘server.php’); this is used to import a php file 
+						so that repetition of codes will not happen and it is also used to reuse existing code. </li></p>
+				<li><p>Server.php contains the code that will connect to the database and contains the variable $conn which 
+				is the connection to the database. Second line is if (isset($_POST['register'])) this is a conditional statement 
+				that if the button in the html or php file named register is click this condition will be set into true otherwise 
+				false. But in the html or php file we need to specify what kind of method to use either it is a POST method or A 
+				GET METHOD.</li></p>
+				<li><p>POST VS GET this is an HTTP that request-response or it is a communications between a server and a client. 
+				A POST method is an HTTP request method that only sends or update data from the server and A POST method is safest
+				HTTP request method when handling sensitive data because it will not have a cache therefore the data of the POST method 
+				is safe because the data is posted into the body of the site not into the URL which is not safe. Unlike for the GET method 
+				it is the opposite of the POST method where the data being requested is seen into the URL of the website.</li></p>
+				<li><p>Third to Fifth line is the used to store the data inputted by the user into a variable. The mysqli_real_escape_string(); 
+				is a method used in order to prevent injections to happen by escaping from any special characters</li></p>
+				<li><p> It has 2 parameters which is the $conn which is the variable stored by the connection of the to the data via the 
+				include(‘server.php’); the other one is the  $_POST[‘username’] this the method from the user which has the method POST and 
+				the specified name.</li></p>
+				<li><p>The $sql = "INSERT INTO accounts (name, username, password) is an sql code that inserts data into the database with the 
+				header name in the database. VALUES ('$name', '$userName', '$password')"; and for this code is for setting the values of of the 
+				SQL method that will be inserted into the accounts table.</li></p>
+				<li><p>The mysqli_query($conn,$sql); is used to push the sql code into the database with the parameters  $conn which is the connection 
+				to the database and if it’s true then the second parameter $sql will execute just like an sql code.</li></p>
+		</div>		
+	</body>
+</html>		

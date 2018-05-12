@@ -1,0 +1,177 @@
+#sec1a {
+	text-align: center;
+	font-size:1em;
+}
+
+#team{
+	margin-top:50px;
+	margin-bottom:50px;
+	font-size:50px;
+	text-align: center;
+}
+.aboutUsPicture {
+	width :  10%;
+	height : 10;
+}
+
+#auth1{
+	overflow:hidden;
+	width:90%;
+	margin-left:70px;
+	text-align:left;
+	margin-bottom: 20px;
+		
+}
+
+#geoA,#cjA,#jusA,#alejoA,#fozA,#jacqA{
+    background-color: rgb(154, 182, 186);
+    padding-top: 80px;
+    padding-right: 30px;
+    padding-bottom: 90px;
+    padding-left: 80px;
+	border-radius: 40px 20px;
+}
+
+
+#auth1 img:hover{  
+    margin: 0px;
+    border-radius: 100%;
+    filter: none;
+    box-shadow: 0px 2px 15px #202020;
+}
+
+#a1{
+	float :left;
+    margin: 0px;
+    border-radius: 100%;
+    transition: 0.5s;
+	height: 280px;
+	width: 280px;
+}
+
+#auth2{
+	overflow:hidden;
+	width:90%;
+	margin-left:70px;
+	text-align:left;
+	margin-bottom: 20px;
+}
+
+#auth2 img:hover{  
+    margin: 0px;
+    border-radius: 100%;
+    filter: none;
+    box-shadow: 0px 2px 15px #202020;
+}
+
+#a2{
+    float:left;
+    margin: 0px;
+    border-radius: 100%;
+    transition: 0.5s;
+	height: 280px;
+	width: 280px;
+}
+
+#auth3{
+	overflow:hidden;
+	width:90%;
+	margin-left:70px;
+	text-align:left;
+	margin-bottom: 20px;
+}
+
+#auth3 img:hover{  
+    margin: 0px;
+    border-radius: 100%;
+    filter: none;
+    box-shadow: 0px 2px 15px #202020;
+}
+
+#a3{
+    float:left;
+    margin: 0px;
+    border-radius: 100%;
+    transition: 0.5s;
+	height: 280px;
+	width: 280px;
+}
+
+#auth4{
+	overflow:hidden;
+	width:90%;
+	margin-left:70px;
+	text-align:left;
+	margin-bottom: 20px;
+}
+
+#auth4 img:hover{  
+    margin: 0px;
+    border-radius: 100%;
+    filter: none;
+    box-shadow: 0px 2px 15px #202020;
+}
+
+#a4{
+	float: left;
+    margin: 0px;
+    border-radius: 100%;
+    transition: 0.5s;
+	height: 280px;
+	width: 280px;
+}
+
+#auth5{
+	overflow:hidden;
+	width:90%;
+	margin-left:70px;
+	text-align:left;
+	margin-bottom: 20px;
+}
+
+#auth5 img:hover{  
+    margin: 0px;
+    border-radius: 100%;
+    filter: none;
+    box-shadow: 0px 2px 15px #202020;
+}
+
+#a5{
+	float: left;
+    margin: 0px;
+    border-radius: 100%;
+    transition: 0.5s;
+	height: 260px;
+	width: 265px;
+}
+
+#auth6{
+	overflow:hidden;
+	width:90%;
+	margin-left:70px;
+	text-align:left;
+	margin-bottom: 20px;
+}
+
+#auth6 img:hover{  
+    margin: 0px;
+    border-radius: 100%;
+    filter: none;
+    box-shadow: 0px 2px 15px #202020;
+}
+
+#a6{
+	float: left;
+    margin: 0px;
+    border-radius: 100%;
+    transition: 0.5s;
+	height: 260px;
+	width: 265px;
+}
+
+footer{
+	font-family:"Courier New";
+	text-align:center;
+	border-top: 1px solid; 
+	margin-top: 15px; 
+}

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title> Web Systems and Technologies </title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header>
+    <h1> Web Systems and Technologies</h1>
+  </header>
+<nav id="main">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="servlets.html"> Server-Side Web Scripting</a></li>
+	  <li><a href="Php.html">Hypertext Preprocessor</a></li>
+	  <li><a href="Nodejs.html">Node js</a></li>
+	  <li><a href="Owsp.html>">OWASP</a></li>
+    </ul>
+</nav>
+
+  <div class="content">
+ 
+	<h2> Server-Side Web Scripting </h2>
+	<section id = "p1">
+		<p id="serv1><span style="margin-left: 4em">
+			<ul>	 
+				<b>Open Web Application Security Project</b>
+				<p> What is open web application security project?</p>
+				<ul>
+					<li><p>is a not-for-profit group that helps organizations develop, purchase, and maintain software applications 
+					that can be trusted. The top 10 web application security projects are:</li></p>
+				</ul>
+				
+				<table>
+					<tr>
+						<th>TOP 10 OWASP</th>
+						<th>Description</th>
+						<th>Example</th>
+						<th>Prevention</th>
+					</tr>
+					
+					<tr>
+						<td>1. Injection</td>
+						<td>Injection flaws, such as SQL injection, occur when untrusted data is sent to an interpreter as part of a command or query. 
+							It can trick the interpreter into executing unintended commands or accessing data.</td>
+						<td>Bypass the login form w/o providing the valid username and password</td>
+						<td>•	Use Parameterized Queries
+							•	Use Input Validation</td>
+					</tr>
+					
+					<tr>
+						<td>2. Broken Authentication</td>
+						<td>Application functions related to authentication and session management are often implemented incorrectly, allowing 
+							attackers to assume other users’ identities.</td>
+						<td>•	URL Rewriting
+							•	Application’s Timeout is not set Properly
+							•	Passwords are not properly hashed and salted
+							•	Predictable Login Credentials</td>
+						<td>•	Password length and complexity
+							•	Protection against brute force login</td>
+					</tr>
+					
+					<tr>
+						<td>3. Sensitive Data Exposure</td>
+						<td>Many web applications and APIs do not properly protect sensitive data. Attackers may steal or modify such weakly 
+							protected data. Sensitive data may be compromised without extra protection, such as encryption at rest or in transit. </td>
+						<td>•	Credit Card Encryption
+							•	SSL is not used for all authenticated pages
+							•	Password’s databases uses unsalted hashes to store everyone’s password</td>
+						<td>•	Encrypt data during transport and at rest
+							•	Minimize Data Surface Area
+							•	Use the latest encryption algorithms
+						</td>
+					</tr>
+					
+					<tr>
+						<td>4. XML External Entities</td>
+						<td>External entities in XML can be used to disclose internal files, remote code execution or DDoS attacks</td>
+					</tr>
+					
+					<tr>
+						<td>5. Broken Access Control</td>
+						<td>Attackers can exploit access restriction flaws to access unauthorized functionality and data.</td>
+						<td>•	Force Browsing the URL
+							•	Horizontal Access Attack</td>
+						<td>•	Deny access to functionality by default
+							•	Use Access control lists and role-based authentication mechanisms
+							•	Do not just hide functions</td>
+					</tr>
+					
+					<tr>
+						<td>6. Security Misconfiguration</td>
+						<td>Use of insecure default configurations, incomplete or ad hoc configurations, open cloud storage, misconfigured HTTP headers, 
+						and verbose error messages containing sensitive information.</td>
+						<td>•	Default Accounts are not changed
+							•	Directory listing is not disabled on your server
+							•	App server comes with sample applications that are not removed from your production server</td>
+						<td>•	Disable administration interfaces 
+							•	Disable debugging 
+							•	 Disable use of default accounts/passwords</td>
+					</tr>
+					
+					<tr>
+						<td>7. Cross-Site Scripting</td>
+						<td>Applications use unsanitized user-supplied data in a web page. It allows execution of scripts in the victim’s browser.</td>
+						<td>•	Basic Coded Search Engine for a website</td>
+						<td>•	HTML escape</td>
+					</tr>
+					
+					<tr>
+						<td>8. Insecure Deserialization</td>
+						<td>Insecure deserialization often leads to remote code execution, replay attacks, injection attacks, and privilege escalation 
+						attacks</td>
+					</tr>
+					
+					<tr>
+						<td>9. Using Components with Unknown Vulnerabilities</td>
+						<td>Components, such as libraries, frameworks run with the same privileges as the application. Components with known 
+						vulnerabilities may undermine application defenses.</td>
+						<td></td>
+						<td>•	Manual Updates</td>
+					</tr>
+					
+					<tr>
+						<td>10. Insufficient Logging and Monitoring</td>
+						<td>Insufficient logging and monitoring, with missing incident response, prevents rapid reaction and allows continuous 
+						probing for vulnerabilities.</td>
+					</tr>
+					
+					
+				</table>
+				
+		</div>
+	</body>		
+</html>

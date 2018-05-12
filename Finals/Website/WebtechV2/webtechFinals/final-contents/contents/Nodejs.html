@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title> Web Systems and Technologies </title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header>
+    <h1> Web Systems and Technologies</h1>
+  </header>
+<nav id="main">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="servlets.html"> Server-Side Web Scripting</a></li>
+	  <li><a href="Php.html">Hypertext Preprocessor</a></li>
+	  <li><a href="Nodejs.html">Node js</a></li>
+	  <li><a href="Owsp.html>">OWASP</a></li>
+    </ul>
+</nav>
+
+  <div class="content">
+ 
+	<h2> Server-Side Web Scripting </h2>
+	<section id = "p1">
+		<p id="serv1><span style="margin-left: 4em">
+			<ul>	 
+				<b>Node js</b>
+				<p> What is Node js?</p>
+				<ul>
+					<li><p>Node js is a server side platform wrapped around the JavaScript language 
+					for building scalable,event-driven applications. Node js utilizes asynchronous programming 
+					which implies operations can be executed while the query is being handled. It let them process 
+					instead of waiting for one step at a time.</li></p>
+					<li><p>Node js files have the enxtension ".js". Just like php, node js can generate a dynamic 
+					page content meaning, contents can be changed.</li></p>
+				</ul>
+				
+				<h4>Creating Server using node js:</h4>
+				
+				<code>
+				<pre>
+				const http = require('http');
+				const hostname = '127.0.0.1';
+				const port = 3000;
+				const server = http.createServer((req, res) => {
+					res.statusCode = 200;
+					res.setHeader('Content-Type', 'text/plain');
+					res.end('Server is Running! Everything is Fine and working!');
+				});
+				
+				server.listen(port, hostname, () => {
+					console.log(`Server running at http://${hostname}:${port}/`);
+				});
+				</pre>
+				</code>
+				
+				<li><p>Run it by typing “node server.js” on the command line and go to the browser.</li></p>
+				<li><p>Const  defines a read-only variable that is not modifiable</li></p>
+				<li><p>Server creates a new server to connect the HTTP</li></p>
+				<li><p>send(), equals: res.status(code).send(body);</li></p>
+				<li><p>res.end will end the process</li></p>
+				<li><p>console.log prints the output</li></p>
+				
+				<h4>One other way on Creating Server using node js:</h4>
+				
+				<code>
+				<pre>
+				var http = require("http");
+				http.createServer(function(request, response) {
+
+						response.writeHead(200, {'Content-Type': 'text/plain'});
+						response.end('Hello World\n');
+				}).listen(8000);
+
+				console.log('Server running at http://127.0.0.1:8000/');
+				</pre>
+				</code>
+				
+				<li><p>Run it by typing “node server.js” on the command line and go to the browser.</li></p>
+				<li><p>The var http loads the HTTP module</li></p>
+				<li><p>http.createServer creates a server that will listen on port 8000 for requests</li></p>
+				<li><p>response.writeHead set the response HTTP header with HTTP status and Content Type</li></p>
+				<li><p>response.end sends the response body “hello world”</li></p>
+				<li><p>response.end sends the response body “hello world”</li></p>
+				<li><p>Write handlers for requests with different HTTP verbs at different URL paths (routes). </li></p>
+				<li><p>Integrate with "view" rendering engines in order to generate responses by inserting data into templates.</li></p>	
+				<li><p>Set common web application settings like the port to use for connecting, and the location of templates 
+					that are used for rendering the response.</li></p>
+				<li><p>Add additional request processing "middleware" at any point within the request handling pipeline</li></p>	
+
+				<h4>Express Hello World</h4>
+				
+				<code>
+				<pre>
+				var express = require('express');
+				var app = express();
+
+					app.get('/', function(req, res) {		
+						res.send('Hello World!');
+					});
+
+				app.listen(3000, function() {
+					console.log('Example app listening on port 3000!');
+				});
+				</pre>
+				</code>
+				
+				<li><p>o use the node js express, you must first type “npm install express”</li></p>
+				<li><p>The first two lines require() (import) the express module and create an Express application</li></p>
+				<li><p>app, has methods for routing HTTP requests, configuring middleware, rendering HTML views, 
+						registering a template engine, and modifying application settings that control how the application behaves</li></p>
+				<li><p>app.get() method specifies a callback function that will be invoked whenever there is an HTTP GET request 
+						with a path ('/') relative to the site root.</li></p>
+				<li><p>Send() returns the string “Hello World”</li></p>
+	</div>
+</body>
+</html>
