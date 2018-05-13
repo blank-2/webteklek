@@ -59,10 +59,10 @@
 	<!--section-->
 	
 	<div class="services">
-		  <div class="column" id="servlet" style="background-color:#aaa;">
+		  <div class="column" id="servlet" style="background-color:#01414B;">
 			<img src="img/servlet.png">
 		  </div>
-		  <div class="column" id="php" style="background-color:#bbb;">
+		  <div class="column" id="php" style="background-color:#5C6F7E;">
 			<img src="img/php.png">
 		  </div>
 		  <div class="column" id="node" style="background-color:#ccc;">
@@ -74,7 +74,7 @@
 	</div>
 
 
-	
+
 	
 	<!--Section-->
 	<section id="section-b" class="grid">
@@ -91,126 +91,471 @@
 			<li>
 				<div class="card-content">
 					<h2 class="card-title">TITLE 1</h2>
-					<P>description what did just happen?</P>
-
-					
+					<p></p>
 				</div>
 			</li>
 		</ul>
 	</section>
-	
-	 <div class="pimg2">
+	 <section class="section section-dark">
+    <h2 class="darktext">Java Servlets</h2>
+  </section>	
+	<div class="pimg2">
     <div class="ptext">
       <span class="border trans">
         Servlet
       </span>
     </div>
-  </div>
-	
+	</div>
+<div class="container">
   <section class="section section-light">
 </section>
 <section>
-    <h2>Section One</h2>
-		<ul>	 
-				<b>JAVA Servlets</b>
-				<ul>
-					<li><p>Java objects that are intended to play the role of server components in client-server communications.</li></p>
-					<li><p>Handles client request by generating responses to such requests.</li></p>
-					<li><p>Part of the JAVA EE Specification. Click <a href="http://www.etc-graz.at/typo3/fileadmin/user_upload/ETC-Hauptseite/Menschenrechte_lernen/POOL/UDHR_Short_version.pdf">Java Servlet API</a> for additional notes.</li></p>
-					<li><p>Hosted in “servlet container that provides the environment in which the servlet runs, as well as controls the “Servlet Lifecycle".</li></p>
-				</ul>
-
-				<b>What are JAVA Servlets?</b>
-				<ul>
-					<li><p>Java Servlets are programs that run on a Web or Application server and act as a middle layer between a requests coming from a Web browser or other HTTP client and databases or applications on the HTTP server.</li></p>
-					<li><p>Using Servlets, you can collect input from users through web page forms, present records from a database or another source, and create web pages dynamically.</li></p>
-					<li><p>Java Servlets often serve the same purpose as programs implemented using the Common Gateway Interface (CGI). But Servlets offer several advantages in comparison with the CGI.</li></p>
-					<li><p>Advantages</li></p>
-					<p><b>1</b>
-						- Performance is significantly better.</p>
-					<p><b>2</b>
-						– Servlets execute within the address space of a Web server. It is not necessary to create a separate process to handle each client request.</p>
-					<p><b>3</b>
-						– Servlets are platform-independent because they are written in Java.</p>
-					<p><b>4</b>
-						– Java security manager on the server enforces a set of restrictions to protect the resources on a server machine. So servlets are trusted.</p>
-					<p><b>5</b>
-						– The full functionality of the Java class libraries is available to a servlet. It can communicate with applets, databases, or other software via the sockets and RMI mechanisms that you have seen already.</p>
-				</ul>
-
-				<b>Servlet Tasks</b>
-				<ul>
-					<ul><li><p>Servlets perform the following major tasks</p></li></ul>
-					<li><p>Read the explicit data sent by the clients (browsers). This includes an HTML form on a Web page or it could also come from an applet or a custom HTTP client program.</li></p>
-					<li><p>Read the implicit HTTP request data sent by the clients (browsers). This includes cookies, media types and compression schemes the browser understands, and so forth.</li></p>
-					<li><p>Process the data and generate the results. This process may require talking to a database, executing an RMI or CORBA call, invoking a Web service, or computing the response directly.</li></p>
-					<li><p>Send the explicit data (i.e., the document) to the clients (browsers). This document can be sent in a variety of formats, including text (HTML or XML), binary (GIF images), Excel, etc.</li></p>
-					<li><p>Send the implicit HTTP response to the clients (browsers). This includes telling the browsers or other clients what type of document is being returned (e.g., HTML), setting cookies and caching parameters, and other such tasks.</li></p>
-				</ul>
-				
-				<b>Servlet Lifecycle</b>
-				<ul>
-					<ul><li><p>Phases of Servlet Life Cycle:</ul></li></p>
-					<p><b>Servlet Class Loading</b>
-						- First phase the a request from the servlet will be received by the container, when this happens, the class will be loaded into memory.</p>
-					<p><b>Servlet Class Initialization </b>
-						– Second phase is the transformation of the normal class into a servlet class and invoke's the init() method for the ServletContext object to be intialized by the servlet container.</p>
-					<p><b>Request Handling</b>
-						– Third phase is the fully functioning website ready to handle client's requests. For every request of the client, the service() method is called by initialiazing the request of the client.</p>
-					<p><b>Removal from Service</b>
-						– Fourth phase all running applications will be stopped by removing the loaded class from memory using the destroy() method.</p>
-					<p><b>Finally</b>
-						– Servlet is garbage collected by the garbage collector of the JVM.</p>
-					
-					<ul><li><p>Servlet Life Cycle consists of three methods:</ul></li></p>
-						<p><b>public void init(ServletConfig config)</b>
-						– Servlet container (e.g., Tomcat or Glassfish) is responsible for loading and instantiating servlets.  It may load and instantiate servlets when it is started, or delay until it determines that the servlet is needed to service a request (usually at the first request to the servlet), this method is invoked only once in the lifecycle of servlet. The servlet container invokes the init(ServletConfig) method of the servlet, providing a ServletConfig object as an argument. It is usually used to read persistent configuration data and initialize costly resource. This ServletConfig object allows the servlet to access initialization parameters for this particular servlet.  These parameters are defined in the web application deployment descriptor file (i.e., “web.xml”), under the servlet's name. So, it is used for one-time initializations, just as with the init() method of applets.</p>
-						<p><b>public void service (ServletRequest request, ServletResponse response)</b>
-						– The service() method of an HttpServlet takes two arguments, an HttpServletRequest object and an HttpServletResponse object that corresponds to the HTTP request and response messages respectively. This method is called once for every client request, the container can’t invoke service() method until init() method is executed. The service() method is the main method to perform the actual task. The servlet container (i.e. web server) calls the service() method to handle requests coming from the client( browsers) and to write the formatted response back to the client. Each time the server receives a request for a servlet, the server spawns a new thread and calls service. The service() method checks the HTTP request type (GET, POST, PUT, DELETE, etc.) and calls doGet, doPost, doPut, doDelete, etc. methods as appropriate. The service () method is called by the container and service method invokes doGet, doPost, doPut, doDelete, etc. methods as appropriate. So you have nothing to do with service() method but you override either doGet() or doPost() depending on what type of request you receive from the client. The doGet() and doPost() are most frequently used methods with in each service request.</p>
-						<p><b>public void destroy()</b>
-						– This method is invoked once when servlet is unloaded from memory. When the servlet container decides that a servlet should be removed from the container (e.g., shutting down the container or time-out, which is implementation-dependent). This method gives your servlet a chance to close database connections, halt background threads, write cookie lists or hit counts to disk, and perform other such cleanup activities. After the destroy() method is called, the servlet object is marked for garbage collection.</p>
-				</ul>
-  </section>
-
+			<h1><strong></strong></h1>
+			
+			<h1><strong>What are JAVA Servlets?</strong></h1>
+			<ul>
+			<ul>
+			<li>
+			<p>Java Servlets are programs that run on a Web or Application server and act as a middle layer between a requests coming from a Web browser or other HTTP client and databases or applications on the HTTP server.</p>
+			</li>
+			</ul>
+			</ul>
+			<ul>
+			<ul>
+			<li>
+			<p>Using Servlets, you can collect input from users through web page forms, present records from a database or another source, and create web pages dynamically.</p>
+			</li>
+			</ul>
+			</ul>
+			<ul>
+			<ul>
+			<li>
+			<p>Java Servlets often serve the same purpose as programs implemented using the Common Gateway Interface (CGI). But Servlets offer several advantages in comparison with the CGI.</p>
+			</li>
+			</ul>
+			</ul>
+			<ul>
+			<li>
+			<p>Java objects that are intended to play the role of server components in client-server communications.</p>
+			</li>
+			<li>
+			<p>Handles client request by generating responses to such requests.</p>
+			</li>
+			<li>
+			<p>Part of the JAVA EE Specification. Click&nbsp;<a href="http://www.etc-graz.at/typo3/fileadmin/user_upload/ETC-Hauptseite/Menschenrechte_lernen/POOL/UDHR_Short_version.pdf">Java Servlet API</a>&nbsp;for additional notes.</p>
+			</li>
+			<li>
+			<p>Hosted in &ldquo;servlet container that provides the environment in which the servlet runs, as well as controls the &ldquo;Servlet Lifecycle".</p>
+			</li>
+			</ul>			
+			
+			<p><strong>Advantages</strong></p>
+			
+			
+			<p><strong>1</strong>&nbsp;- Performance is significantly better.</p>
+			<p><strong>2</strong>&nbsp;&ndash; Servlets execute within the address space of a Web server. It is not necessary to create a separate process to handle each client request.</p>
+			<p><strong>3</strong>&nbsp;&ndash; Servlets are platform-independent because they are written in Java.</p>
+			<p><strong>4</strong>&nbsp;&ndash; Java security manager on the server enforces a set of restrictions to protect the resources on a server machine. So servlets are trusted.</p>
+			<p><strong>5</strong>&nbsp;&ndash; The full functionality of the Java class libraries is available to a servlet. It can communicate with applets, databases, or other software via the sockets and RMI mechanisms that you have seen already.</p>
+			<h1><strong>Servlet Tasks</strong></h1>
+			<h4>Servlets perform the following major tasks</h4>
+			<ul>
+			<ul>
+			
+			</ul>
+			</ul>
+			<ul>
+			<ul>
+			<li>
+			<p>Read the implicit HTTP request data sent by the clients (browsers). This includes cookies, media types and compression schemes the browser understands, and so forth.</p>
+			<p>Read the explicit data sent by the clients (browsers). This includes an HTML form on a Web page or it could also come from an applet or a custom HTTP client program.</p>
+			</li>
+			</ul>
+			</ul>
+			<ul>
+			<ul>
+			<li>
+			<p>Process the data and generate the results. This process may require talking to a database, executing an RMI or CORBA call, invoking a Web service, or computing the response directly.</p>
+			</li>
+			</ul>
+			</ul>
+			<ul>
+			<ul>
+			<li>
+			<p>Send the explicit data (i.e., the document) to the clients (browsers). This document can be sent in a variety of formats, including text (HTML or XML), binary (GIF images), Excel, etc.</p>
+			<p>Send the implicit HTTP response to the clients (browsers). This includes telling the browsers or other clients what type of document is being returned (e.g., HTML), setting cookies and caching parameters, and other such tasks.</p>
+			</li>
+			</ul>
+			</ul>
+			
+ </section>
+</div>
+<div class="container">
   <div class="pimg1">
     <div class="ptext">
       <span class="border trans">
       </span>
     </div>
   </div>
+ </div>
 
   <section class="section section-dark">
-    <h2>Section Two</h2>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, laudantium, quibusdam? Nobis, delectus, commodi, fugit amet tempora facere dolores nisi facilis consequatur, odio hic minima nostrum. Perferendis eos earum praesentium, blanditiis sapiente labore aliquam ipsa architecto vitae. Minima soluta temporibus voluptates inventore commodi cumque esse suscipit optio aliquam et, dolorem a cupiditate nihil fuga laboriosam fugiat placeat dignissimos! Unde eveniet placeat quisquam blanditiis voluptatem doloremque fugiat dolor repellendus ratione in.
-    </p>
+    <h2 class="darktext">PHP: Hypertext Preprocessor</h2>
+	
   </section>
-
-  <div class="pimg3">
+<!--PHP-->
+<div class="pimg3">
     <div class="ptext">
       <span class="border trans">
-        Image Three Text
+        PHP
+      </span>
+    </div>
+	</div>
+<div class="container">	
+<section>
+
+	<section id = "p1">
+		<p id="serv1><span style="margin-left: 4em">
+			<ul>	 
+				<h1><strong>PHP: Hypertext Preprocessor</strong></h1>
+				<p> What is PHP?</p>
+				<ul>
+					<li><p>PHP stands for Hypertext Preprocessor. PHP is an open source scripting language and
+							the scripts are  executed on the server. PHP can add, delete and modify data in 
+							a database and can generate dynamic page content meaning that it contents can be change.</li></p>
+					<li><p>PHP files have the extension ".php" that can contain text, HTML, CSS, PHP code and
+					Javascript.</li></p>
+					
+				</ul>
+				
+				<h4>How to connect to the database using PHP</h4>
+				<p>This is an example of a MySqli Procedural</p>
+				
+				<code>
+				<pre>
+				&lt?php
+					$host = 'localhost'; 
+					$user = 'root';
+					$pass = '';
+					$dbname = 'quiz';
+	
+					$conn = mysqli_connect($host,$user,$pass,$dbname) or die('Cannot connect to the database');
+				?&gt
+				</pre>
+				</code><br>
+				
+				<li><p>The set of code which has the character dollar sign ($) is a used to create a variable that 
+						stores a string value that will be inserted into the mysqli_connect method.</li></p>
+				<li><p>This is an optional way to connect to the because the mysqli_connect method also accepts direct 
+						string values but for formality's sake it is better to create a variable to represent the value 
+						of the parameters this will also help the user determine the value of string it is.</li></p>
+				<li><p>The mysqli_connect is the method used in order to connect to the database that is hosted via the wamp server and mySQL. </li></p>
+				<li><p>The parameters of mysqli_connect has the following parameters first is the name of the host/server name, second is the username, 
+						third is the password then fourth is the database name this parameters are essential but the parameter’s from the first to the 
+						third are the basic requirement to connect to the database.</li></p>
+				<li><p>The die method is used if the connection to the data fails and the message inside the parameter of the die method will be shown.</li></p>
+				
+				<h4>How to create a registration form using PHP</h4>
+				
+				<code>
+				<pre>
+				&lt?php
+					include(‘server.php); 
+						if (isset($_POST['register'])) { 
+							$name = mysqli_real_escape_string($conn, $_POST['name']);
+							$userName = mysqli_real_escape_string($conn, $_POST['username']);
+							$password = mysqli_real_escape_string($conn, $_POST['password']);
+	
+						$sql = "INSERT INTO accounts (name, username, password)
+								VALUES ('$name', '$userName', '$password')";
+						mysqli_query($conn,$sql);
+						}
+				?&gt
+				</pre>
+				</code><br>
+
+				<li><p>For the first line of code include(‘server.php’); this is used to import a php file 
+						so that repetition of codes will not happen and it is also used to reuse existing code. </li></p>
+				<li><p>Server.php contains the code that will connect to the database and contains the variable $conn which 
+				is the connection to the database. Second line is if (isset($_POST['register'])) this is a conditional statement 
+				that if the button in the html or php file named register is click this condition will be set into true otherwise 
+				false. But in the html or php file we need to specify what kind of method to use either it is a POST method or A 
+				GET METHOD.</li></p>
+				<li><p>POST VS GET this is an HTTP that request-response or it is a communications between a server and a client. 
+				A POST method is an HTTP request method that only sends or update data from the server and A POST method is safest
+				HTTP request method when handling sensitive data because it will not have a cache therefore the data of the POST method 
+				is safe because the data is posted into the body of the site not into the URL which is not safe. Unlike for the GET method 
+				it is the opposite of the POST method where the data being requested is seen into the URL of the website.</li></p>
+				<li><p>Third to Fifth line is the used to store the data inputted by the user into a variable. The mysqli_real_escape_string(); 
+				is a method used in order to prevent injections to happen by escaping from any special characters</li></p>
+				<li><p> It has 2 parameters which is the $conn which is the variable stored by the connection of the to the data via the 
+				include(‘server.php’); the other one is the  $_POST[‘username’] this the method from the user which has the method POST and 
+				the specified name.</li></p>
+				<li><p>The $sql = "INSERT INTO accounts (name, username, password) is an sql code that inserts data into the database with the 
+				header name in the database. VALUES ('$name', '$userName', '$password')"; and for this code is for setting the values of of the 
+				SQL method that will be inserted into the accounts table.</li></p>
+				<li><p>The mysqli_query($conn,$sql); is used to push the sql code into the database with the parameters  $conn which is the connection 
+				to the database and if it’s true then the second parameter $sql will execute just like an sql code.</li></p>
+
+</section>
+
+</div>
+<!--node.js-->
+ <section class="section section-dark">
+    <h2 class="darktext">Node js</h2>
+  </section>
+
+<div class="container">
+<section>
+
+ 
+	<section id = "p1">
+
+		<p id="serv1><span style="margin-left: 4em">
+			<ul>	 
+				
+				<h1> What is Node js?</h1>
+				<ul>
+					<li><p>Node js is a server side platform wrapped around the JavaScript language 
+					for building scalable,event-driven applications. Node js utilizes asynchronous programming 
+					which implies operations can be executed while the query is being handled. It let them process 
+					instead of waiting for one step at a time.</li></p>
+					<li><p>Node js files have the enxtension ".js". Just like php, node js can generate a dynamic 
+					page content meaning, contents can be changed.</li></p>
+				</ul>
+				
+				<h4>Creating Server using node js:</h4>
+				
+				<code>
+				<pre>
+				const http = require('http');
+				const hostname = '127.0.0.1';
+				const port = 3000;
+				const server = http.createServer((req, res) => {
+					res.statusCode = 200;
+					res.setHeader('Content-Type', 'text/plain');
+					res.end('Server is Running! Everything is Fine and working!');
+				});
+				
+				server.listen(port, hostname, () => {
+					console.log(`Server running at http://${hostname}:${port}/`);
+				});
+				</pre>
+				</code>
+				
+				<li><p>Run it by typing “node server.js” on the command line and go to the browser.</li></p>
+				<li><p>Const  defines a read-only variable that is not modifiable</li></p>
+				<li><p>Server creates a new server to connect the HTTP</li></p>
+				<li><p>send(), equals: res.status(code).send(body);</li></p>
+				<li><p>res.end will end the process</li></p>
+				<li><p>console.log prints the output</li></p>
+				
+				<h4>One other way on Creating Server using node js:</h4>
+				
+				<code>
+				<pre>
+				var http = require("http");
+				http.createServer(function(request, response) {
+
+						response.writeHead(200, {'Content-Type': 'text/plain'});
+						response.end('Hello World\n');
+				}).listen(8000);?.,mn 
+				console.log('Server running at http://127.0.0.1:8000/');
+				</pre>
+				</code>
+				
+				<li><p>Run it by typing “node server.js” on the command line and go to the browser.</li></p>
+				<li><p>The var http loads the HTTP module</li></p>
+				<li><p>http.createServer creates a server that will listen on port 8000 for requests</li></p>
+				<li><p>response.writeHead set the response HTTP header with HTTP status and Content Type</li></p>
+				<li><p>response.end sends the response body “hello world”</li></p>
+				<li><p>response.end sends the response body “hello world”</li></p>
+				<li><p>Write handlers for requests with different HTTP verbs at different URL paths (routes). </li></p>
+				<li><p>Integrate with "view" rendering engines in order to generate responses by inserting data into templates.</li></p>	
+				<li><p>Set common web application settings like the port to use for connecting, and the location of templates 
+					that are used for rendering the response.</li></p>
+				<li><p>Add additional request processing "middleware" at any point within the request handling pipeline</li></p>	
+
+				<h4>Express Hello World</h4>
+				
+				<code>
+				<pre>
+				var express = require('express');
+				var app = express();
+
+					app.get('/', function(req, res) {		
+						res.send('Hello World!');
+					});
+
+				app.listen(3000, function() {
+					console.log('Example app listening on port 3000!');
+				});
+				</pre>
+				</code>
+				
+				<li><p>to use the node js express, you must first type “npm install express”</li></p>
+				<li><p>The first two lines require() (import) the express module and create an Express application</li></p>
+				<li><p>app, has methods for routing HTTP requests, configuring middleware, rendering HTML views, 
+						registering a template engine, and modifying application settings that control how the application behaves</li></p>
+				<li><p>app.get() method specifies a callback function that will be invoked whenever there is an HTTP GET request 
+						with a path ('/') relative to the site root.</li></p>
+				<li><p>Send() returns the string “Hello World”</li></p>
+
+</section>
+</div>
+<section class="section section-dark">
+    <h2 class="darktext">OWASP</h2>
+  </section>
+
+
+<div class="pimg4">
+    <div class="ptext">
+      <span class="border trans">
+       Open Web Application Security Project
       </span>
     </div>
   </div>
 
+  
+<!--owasp-->
+<section>
+
+ <div class="container">
+	<h2>Open Web Application Security Project</h2>
+	<section id = "p1">
+		<p id="serv1"><span style="margin-left: 4em">
+			<ul>	 
+			
+				<p> What is open web application security project?</p>
+				<ul>
+					<li><p>is a not-for-profit group that helps organizations develop, purchase, and maintain software applications 
+					that can be trusted. The top 10 web application security projects are:</li></p>
+				</ul>
+				
+				<table>
+					<tr>
+						<th>TOP 10 OWASP</th>
+						<th>Description</th>
+						<th>Example</th>
+						<th>Prevention</th>
+					</tr>
+					
+					<tr>
+						<td>1. Injection</td>
+						<td>Injection flaws, such as SQL injection, occur when untrusted data is sent to an interpreter as part of a command or query. 
+							It can trick the interpreter into executing unintended commands or accessing data.</td>
+						<td>Bypass the login form w/o providing the valid username and password</td>
+						<td>•	Use Parameterized Queries
+							•	Use Input Validation</td>
+					</tr>
+					
+					<tr>
+						<td>2. Broken Authentication</td>
+						<td>Application functions related to authentication and session management are often implemented incorrectly, allowing 
+							attackers to assume other users’ identities.</td>
+						<td>•	URL Rewriting
+							•	Application’s Timeout is not set Properly
+							•	Passwords are not properly hashed and salted
+							•	Predictable Login Credentials</td>
+						<td>•	Password length and complexity
+							•	Protection against brute force login</td>
+					</tr>
+					
+					<tr>
+						<td>3. Sensitive Data Exposure</td>
+						<td>Many web applications and APIs do not properly protect sensitive data. Attackers may steal or modify such weakly 
+							protected data. Sensitive data may be compromised without extra protection, such as encryption at rest or in transit. </td>
+						<td>•	Credit Card Encryption
+							•	SSL is not used for all authenticated pages
+							•	Password’s databases uses unsalted hashes to store everyone’s password</td>
+						<td>•	Encrypt data during transport and at rest
+							•	Minimize Data Surface Area
+							•	Use the latest encryption algorithms
+						</td>
+					</tr>
+					
+					<tr>
+						<td>4. XML External Entities</td>
+						<td>External entities in XML can be used to disclose internal files, remote code execution or DDoS attacks</td>
+					</tr>
+					
+					<tr>
+						<td>5. Broken Access Control</td>
+						<td>Attackers can exploit access restriction flaws to access unauthorized functionality and data.</td>
+						<td>•	Force Browsing the URL
+							•	Horizontal Access Attack</td>
+						<td>•	Deny access to functionality by default
+							•	Use Access control lists and role-based authentication mechanisms
+							•	Do not just hide functions</td>
+					</tr>
+					
+					<tr>
+						<td>6. Security Misconfiguration</td>
+						<td>Use of insecure default configurations, incomplete or ad hoc configurations, open cloud storage, misconfigured HTTP headers, 
+						and verbose error messages containing sensitive information.</td>
+						<td>•	Default Accounts are not changed
+							•	Directory listing is not disabled on your server
+							•	App server comes with sample applications that are not removed from your production server</td>
+						<td>•	Disable administration interfaces 
+							•	Disable debugging 
+							•	 Disable use of default accounts/passwords</td>
+					</tr>
+					
+					<tr>
+						<td>7. Cross-Site Scripting</td>
+						<td>Applications use unsanitized user-supplied data in a web page. It allows execution of scripts in the victim’s browser.</td>
+						<td>•	Basic Coded Search Engine for a website</td>
+						<td>•	HTML escape</td>
+					</tr>
+					
+					<tr>
+						<td>8. Insecure Deserialization</td>
+						<td>Insecure deserialization often leads to remote code execution, replay attacks, injection attacks, and privilege escalation 
+						attacks</td>
+					</tr>
+					
+					<tr>
+						<td>9. Using Components with Unknown Vulnerabilities</td>
+						<td>Components, such as libraries, frameworks run with the same privileges as the application. Components with known 
+						vulnerabilities may undermine application defenses.</td>
+						<td></td>
+						<td>•	Manual Updates</td>
+					</tr>
+					
+					<tr>
+						<td>10. Insufficient Logging and Monitoring</td>
+						<td>Insufficient logging and monitoring, with missing incident response, prevents rapid reaction and allows continuous 
+						probing for vulnerabilities.</td>
+					</tr>
+					
+					
+				</table>
+
+
+</section>
+
+</div>
+
+  <section class="section section-dark">
+    <h2 class="darktext">INFO</h2>
+  </section>
 	
 	 <section id="boxes">
       <div class="container">
         <div class="box">
-          <img src="img/rent.png">
-          <h3>INFO 1</h3>
+          <img src="img/quiz.png" alt="">
+          <h3>QUIZZES</h3>
           <p>INFO HERE</p>
         </div>
         <div class="box">
-          <img src="img/retail.png">
-          <h3>INFO2</h3>
+          <img src="img/team.png">
+          <h3>TEAM</h3>
           <p>INFO HERE.</p>
         </div>
         <div class="box">
-          <img src="img/logo_brush.png">
-          <h3> Design</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies</p>
+          <img src="img/reference.png">
+          <h3>RESOURCES</h3>
+          <p>INFO</p>
         </div>
       </div>
     </section>

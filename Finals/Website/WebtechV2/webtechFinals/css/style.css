@@ -1,3 +1,14 @@
+/* container */
+
+div.container{
+	width:65%;
+	text-align:center;
+	height: auto;
+	margin: auto;
+	max-width:100%;
+	height:auto;
+}
+
 body{
 	margin: 0;
 	font-family: Anton,Arial, Helvetica, sans-seif;
@@ -20,8 +31,10 @@ h1, h2, h3{
 }
 
 p{
-	margin:0;
-	padding: 1em 0;
+	margin:5px;
+	padding:1px;
+	text-align:left;
+	
 	
 }
 /*header showcase*/
@@ -275,7 +288,7 @@ footer{
     
 }
 .link-3:hover {
-  background-color:#336699;
+  background-color:#3D494C;
   color: white;
   padding: 24px 10px;
 }
@@ -293,7 +306,7 @@ nav {
 /*div tables*/
 
 /*PARALLAX*/
-.pimg1, .pimg2, .pimg3{
+.pimg1, .pimg2, .pimg3,.pimg4{
   position:relative;
   opacity:0.70;
   background-position:center;
@@ -308,19 +321,26 @@ nav {
 }
 
 .pimg1{
-  background-image:url('../img/pimg2.jpg');
-  min-height:100%;
+  background-image:url('../img/pimg1.jpg');
+  min-height:100%
 }
 
 .pimg2{
-  background-image:url('../img/pimg2.jpg');
+  background-image:url('../img/pimg1.jpg');
   min-height:400px;
 }
 
 .pimg3{
-  background-image:url('../img/pimg1.jpg');
+  background-image:url('../img/pimg4.jpg');
   min-height:400px;
 }
+
+.pimg4{
+  background-image:url('../img/pimg2.jpg');
+  min-height:400px;
+}
+
+
 
 
 .section-light{
@@ -331,6 +351,10 @@ nav {
 .section-dark{
   background-color:#282e34;
   color:#ddd;
+  
+}
+.section-dark p{
+	position:center;
 }
 
 .ptext{
@@ -348,6 +372,7 @@ nav {
   background-color:#111;
   color:#fff;
   padding:20px;
+  color: #336699;
 }
 
 .ptext .border.trans{
@@ -355,7 +380,7 @@ nav {
 }
 
 @media(max-width:568px){
-  .pimg1, .pimg2, .pimg3{
+  .pimg1, .pimg2, .pimg3, .pimg4{
     background-attachment:scroll;
   }
 }
@@ -450,7 +475,7 @@ transform-origin: 50% 50% 0;
     float: left;
     width: 50%;
 	padding: 30px;
-    height: 300px; /* Should be removed. Only for demonstration */
+    /* height: px; /* Should be removed. Only for demonstration */
 	display: block;
 	margin: 0 auto;
 }
@@ -511,3 +536,27 @@ transform-origin: 50% 50% 0;
 	width: 350px;
 }
 
+.javaservlet p{
+background-color: #ffffff;
+font-family: Arial;
+font-size: 14px;
+font-style: normal;
+font-weight: normal;
+text-decoration: none;
+text-transform: none;
+color: #000000;
+text-align:left;
+
+}
+
+
+#servletli {
+	
+	list-style:none;
+	margin:0;
+	padding:0;
+	list-style-type: square;
+}
+.darktext{
+	text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
+}

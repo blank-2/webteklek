@@ -45,8 +45,9 @@
     margin: 0px;
     border-radius: 100%;
     transition: 0.5s;
-	height: 280px;
-	width: 280px;
+    padding: 20px;
+	height: 240px;
+	width: 240px;
 }
 
 #auth2{
@@ -65,12 +66,13 @@
 }
 
 #a2{
-    float:left;
+   float :left;
     margin: 0px;
     border-radius: 100%;
     transition: 0.5s;
-	height: 280px;
-	width: 280px;
+    padding: 20px;
+	height: 240px;
+	width: 240px;
 }
 
 #auth3{
@@ -89,12 +91,13 @@
 }
 
 #a3{
-    float:left;
+    float :left;
     margin: 0px;
     border-radius: 100%;
     transition: 0.5s;
-	height: 280px;
-	width: 280px;
+    padding: 20px;
+	height: 240px;
+	width: 240px;
 }
 
 #auth4{
@@ -113,12 +116,13 @@
 }
 
 #a4{
-	float: left;
+	float :left;
     margin: 0px;
     border-radius: 100%;
     transition: 0.5s;
-	height: 280px;
-	width: 280px;
+    padding: 20px;
+	height: 240px;
+	width: 240px;
 }
 
 #auth5{
@@ -137,12 +141,13 @@
 }
 
 #a5{
-	float: left;
+	float :left;
     margin: 0px;
     border-radius: 100%;
     transition: 0.5s;
-	height: 260px;
-	width: 265px;
+    padding: 20px;
+	height: 240px;
+	width: 240px;
 }
 
 #auth6{
@@ -161,12 +166,13 @@
 }
 
 #a6{
-	float: left;
+	float :left;
     margin: 0px;
     border-radius: 100%;
     transition: 0.5s;
-	height: 260px;
-	width: 265px;
+    padding: 20px;
+	height: 240px;
+	width: 240px;
 }
 
 footer{
